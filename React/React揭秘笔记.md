@@ -111,7 +111,7 @@ React 16 之后采用新架构
 ### Fiber 架构正文
 
 - *reconciliation*
-  - React 使用算法将一棵树和另一棵树进行比较，以确定哪一部分需要更改。
+  - React 使用算法将一棵树和另一棵树进行比较，以确定哪一部分需要更改，以最少的更新同步到DOM
 - *update*
   - 用于渲染React应用程序，通常是`setState`更新导致的重新渲染
 
@@ -189,13 +189,31 @@ fiber节点可以构成fiber树，那么fiber树和页面呈现的DOM树有什�
   - 作用：React 使用双缓存来完成Fiber树的构建与替换--对应着DOM树的创建与更新
 
 > 每当状态更新都会产生 workInProgress Fiber 树，当workInProgress构建完，current指向workInprogress，交给Renderer渲染到页面上。
+>
+> 即：
+>
+> - current 表示UI上绘制的当前版本
+> - workInProgress - 正在构建并将作用于下一个版本的current
 
 fiber渲染分两种情况：
 
 - 初始化时
 - 状态更新时
 
+React 内部使用Fiber Tree来计算最小的DOM更新，并在Commit阶段提交它们，React如何进行初始安装（首次渲染）？
+
 <img src="/Users/xiu/code/notes/assets/fiber-brief-intro-dark.png" alt="img" style="zoom:80%;" />
+
+- 触发阶段初始挂载
+- 渲染阶段初始挂载
+- Commit阶段初始挂载
+
+以下是几个API
+
+- `FiberRootNode` - 特殊元素，充当React根元素，保存整个应用程序的元信息。
+- `FiberNode` - 除`fiberRootNode` 之外的所有节点
+
+
 
 ---
 
