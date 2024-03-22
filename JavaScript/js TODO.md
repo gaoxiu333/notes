@@ -19,3 +19,20 @@
 * [ ] cheat sheet
 
   * [ ] https://github.com/mbeaudru/modern-js-cheatsheet
+
+## 对象小结
+
+- 对象是基于原型的继承
+
+- 创建对象
+
+- 对象继承
+
+- 枚举对象
+
+  
+
+
+
+
+

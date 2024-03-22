@@ -1,5 +1,11 @@
 # JavaScript 对象
 
+- 对象创建
+- 对象继承
+- 对象枚举（遍历）
+
+
+
 ### 对象遍历
 
 * [`for..in`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/for...in) 
@@ -47,10 +53,29 @@
 - 使用构造函数
 
 - 使用`Object.create`
+  - 指定原型
+
+  - `null` 指定无原型
 
 - 使用`Object.defineProperty`
 
 > 更多参考：[使用不同的方法来创建对象和改变原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#使用不同的方法来创建对象和改变原型链)
+
+```js
+
+
+// 1. 对象初始化器/字面量
+let obj1 = {a:1}
+// 2. 构造函数
+function Foo(){
+    this.name = 'aa'
+}
+let obj2 = new Foo()
+//3. Object.create// 可以指定原型，或者null没有原型
+let obj3 = Object.create(Foo)
+```
+
+
 
 ###### 对象描述符
 
@@ -105,6 +130,11 @@
 ## 基于原型链的继承
 
 - [MDN 继承与原型链](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#基于原型链的继承) 的笔记
+
+- 对象原型：`[[Prototype]]` 、`{ __proto__: ... }`(注意不能直接这么访问，访问已经被遗弃)
+- 构造函数创建的每一个实例都会自动将构造函数的 [`prototype`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/prototype) 属性作为其 `[[Prototype]]`
+- `Object.create`
+- 
 
 ### 原型链
 
