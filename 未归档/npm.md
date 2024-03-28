@@ -11,6 +11,7 @@ pnpm dlx create-react-app my-app
 
 ```bash
 pnpm store prune # 会清除所有缓存？
+npm cache clean --force # npm 清除缓存
 ```
 
 ## corepack
