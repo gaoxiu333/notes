@@ -165,8 +165,10 @@ export default function RootLayout({
 
 本次暂时只用到了这俩大插件系统中的以下几个插件：
 
-- `remark-gfm` - 添加github风格的Markdown支持 -> 新版本有bug，只能使用`3.0.1`版本
+- `remark-gfm` -用于启用 GitHub 使用 GFM 添加的 Markdown 扩展：自动链接文字 ( `www.x.com`)、脚注 ( `[^1]`)、删除线 ( `~~stuff~~`)、表格 ( `| cell |…`) 和任务列表 ( `* [x]`)
 - `rehype-prism-plus` - 语法高亮，且支持更多功能
+> -`remark-gfm` [最新版本会报错](https://github.com/hashicorp/next-mdx-remote/issues/403)，解决方案是降级到`3.0.1`
+
 
 以及以下几个插件
 

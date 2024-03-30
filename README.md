@@ -4,5 +4,10 @@
 
 **写作软件**
 
-- [Typora](https://typora.io/)
-- [Obsidian](https://obsidian.md/)
+- [Obsidian](https://obsidian.md/)  - 搜索和标签分类很好用，也可以写作
+- [Typora](https://typora.io/) - 页面简洁，更适合Markdown写作
+
+**TODO：** 
+
+- 文章内的图片，应该使用哪一种图床
+- 如果是博客的内容的话，如何关联发布到博客（这个仓库有可能是博客的数据仓库？？），也有可能不需要，各发各的？嗯！～各发各的。

@@ -1,7 +1,9 @@
 ## Icon 资源推荐
 
 - [流行品牌SVG库](https://simpleicons.org/)
-- [iconify](https://iconify.design/) - 开源的矢量图标
+- [iconify](https://iconify.design/) - 开源的矢量图标- nextjs 服务端组件不可用
+- [Feather Icons](https://github.com/feathericons/feather)
+- [Lucide](https://github.com/lucide-icons/lucide) - feather 替代
 
 ## SVG 常用属性
 
