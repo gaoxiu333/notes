@@ -1,8 +1,18 @@
-## React 生态
+# React 生态
 
-虽然是记录整个生态，但是碍于了解的不够全面，先从自己理解的最佳实践开始吧。
+* Routing
 
-- react-router
-- api
-- antd
-- 
+  * React Router
+
+* State Managment（状态管理）
+
+  * MobX
+
+  * Redux
+
+* i18n
+
+  * i18next
+
+  * react-intl
+
