@@ -5,7 +5,7 @@
 关注提示词开发和优化，帮助用户将大模型用户各种场景，也有助于更好的了解大模型语言的能力和局限性。
 
 
-## 提示工程简介
+## 提示工程简记
 
 - 大语言模型设置
 	- `Temperature` - 真实简洁=>富有创造性(随机)
@@ -111,14 +111,14 @@ TOT 思维树
 
 ## 自动提示词
 
-- [AutoPrompt(opens in a new tab)](https://arxiv.org/abs/2010.15980) - 提出了一种基于梯度引导搜索的方法，用于自动创建各种任务的提示。
-- [Prefix Tuning(opens in a new tab)](https://arxiv.org/abs/2101.00190) - 是一种轻量级的fine-tuning替代方案，为NLG任务添加可训练的连续前缀。
-- [Prompt Tuning(opens in a new tab)](https://arxiv.org/abs/2104.08691) - 提出了一种通过反向传播学习软提示的机制。
+- [AutoPrompt](https://arxiv.org/abs/2010.15980) - 提出了一种基于梯度引导搜索的方法，用于自动创建各种任务的提示。
+- [Prefix Tuning](https://arxiv.org/abs/2101.00190) - 是一种轻量级的fine-tuning替代方案，为NLG任务添加可训练的连续前缀。
+- [Prompt Tuning](https://arxiv.org/abs/2104.08691) - 提出了一种通过反向传播学习软提示的机制。
 
 ## 对抗性提示
 
-- 提示注入 - [Riley在Twitter上分享的一个流行的例子(opens in a new tab)](https://twitter.com/goodside/status/1569128808308957185?s=20)
-- 提示漏洞 - [这个提示泄漏的例子(opens in a new tab)](https://twitter.com/simonw/status/1570933190289924096?s=20)
+- 提示注入 - [Riley在Twitter上分享的一个流行的例子](https://twitter.com/goodside/status/1569128808308957185?s=20)
+- 提示漏洞 - [这个提示泄漏的例子](https://twitter.com/simonw/status/1570933190289924096?s=20)
 - 非法行为
 - DAN - Do Anything Now
 
@@ -132,8 +132,8 @@ TOT 思维树
 
 |  描述 | 笔记本  |
 |---|---|
-|学习如何使用`openai`和`LangChain`库执行许多不同类型的常见任务|[Prompt Engineering入门(opens in a new tab)](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-lecture.ipynb)|
-|学习如何使用Python解释器与语言模型结合使用代码作为推理来解决常见任务。|[程序辅助语言模型(opens in a new tab)](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-pal.ipynb)|
-|学习更多关于如何使用`openai`库调用ChatGPT API的内容。|[ChatGPT API介绍(opens in a new tab)](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-chatgpt-intro.ipynb)|
-|学习如何使用`LangChain`库使用ChatGPT功能。|[使用LangChain的ChatGPT API(opens in a new tab)](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-chatgpt-langchain.ipynb)|
+|学习如何使用`openai`和`LangChain`库执行许多不同类型的常见任务|[Prompt Engineering入门](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-lecture.ipynb)|
+|学习如何使用Python解释器与语言模型结合使用代码作为推理来解决常见任务。|[程序辅助语言模型](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-pal.ipynb)|
+|学习更多关于如何使用`openai`库调用ChatGPT API的内容。|[ChatGPT API介绍](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-chatgpt-intro.ipynb)|
+|学习如何使用`LangChain`库使用ChatGPT功能。|[使用LangChain的ChatGPT API](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-chatgpt-langchain.ipynb)|
 |学习关于对抗Prompt Engineering的内容，包括防御措施。|[对抗Prompt Engineering](https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/notebooks/pe-chatgpt-adversarial.ipynb)|
