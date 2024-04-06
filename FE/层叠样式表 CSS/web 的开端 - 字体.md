@@ -30,6 +30,8 @@ CSS 定义了 5 个常用的字体名称：
 
 五种字体的通用名字，当你不知道要用什么样的无衬线字体时，直接使用通用字体名字`sans-serif`，让浏览器帮你选择字体，这样虽然方便，但是你不知道浏览器会具体使用哪一种无衬线字体。
 
+> 通用字体有W3C制定：[Generic font families](https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/#generic-font-families)
+
 ### web 安全字体
 
 尽量选择在所有操作系统上都支持或者预装的字体，这种字体被称为安全字体；不然会很尴尬，你精心选择的字体系统上没有时会被忽略。
@@ -101,6 +103,8 @@ body{
  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 }
 ```
+
+> `system-ui`是由W3C CSS Leve4 新增的通用字体名称：[Generic font families](https://www.w3.org/TR/css-fonts-4/#generic-font-families)
 
 ## 我的字体堆栈
 
