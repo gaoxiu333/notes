@@ -1,1 +1,0 @@
-_如果从 Docker Hub 下载镜像非常缓慢，可以参照 [镜像加速器](http://docker.baoshu.red/install/mirror.html) 一节配置加速器。_
