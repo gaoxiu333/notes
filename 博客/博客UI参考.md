@@ -7,6 +7,7 @@
 - [一个很简洁的博客](https://bholmes.dev/)
 - [使用现代技术的博客，作者貌似是一个西南亚人](https://www.dalelarroder.com/)
 - [右侧目录效果不错](https://chirpy.cotes.page/posts/getting-started/)
+- [一个不错的特效](https://www.byewind.com/)
 
 
 ## 创建博客
