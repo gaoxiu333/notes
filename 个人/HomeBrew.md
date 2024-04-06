@@ -1,4 +1,4 @@
-brew 和 brew cask 的区别？
+##  brew 和 brew cask 的区别？
 
 HomeBrew-Cask 拓展了 HomeBrew，允许通过命令行工具安装大型二进制文件，例如 Goole Chrome等应用程序；简单的理解，brew 安装的没有GUI界面的软件，而 brew cask 安装的软件都有 GUI 界面。
 
