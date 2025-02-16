@@ -15,3 +15,5 @@
 ## 更新
 
 - Obsidian 写作总是搞乱排版，所以写作只剩下Typora了；Obsidian只有search比较好用了。
+- 又回来了... 因为要用 AnKi，这个又成了更方便的笔记工具
+- 试了一下，成本比较高，需要特定的语法才能 从 Obsidian 导出到 Anki
