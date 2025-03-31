@@ -30,13 +30,20 @@
 - [ChatGPT](https://chat.openai.com) - OpenAI 的 AI 助手
 - [Claude](https://claude.ai) - Anthropic 的 AI 助手
   - [Poe](https://poe.com) - 多模型聊天平台
-- [GitHub Copilot](https://github.com/features/copilot) - GitHub 的 AI 编程助手
 - [Google Gemini](https://gemini.google.com) - Google 的 AI 助手
+- 自主编码代理
 - [Perplexity](https://www.perplexity.ai/) - 基于搜索的 AI 助手
 - [Anthropic Claude](https://www.anthropic.com/claude) - 专业版 Claude
 - [DeepSeek](https://deepseek.com/) - 开源的中文大模型
 - [文心一言](https://yiyan.baidu.com/) - 百度的 AI 助手
 - [通义千问](https://qianwen.aliyun.com/) - 阿里的 AI 助手
+## 编程助手
+- [GitHub Copilot](https://github.com/features/copilot) - GitHub 的 AI 编程助手
+- Copilot
+- Codeium
+- Cursor
+- Cline
+- Trea
 
 ## 翻译工具
 - [Easydict](https://github.com/tisfeng/Easydict) - 开源词典翻译工具
@@ -52,6 +59,7 @@
 - [PromptPerfect](https://promptperfect.jina.ai/) - 提示词优化工具
 - [Learn Prompting](https://learnprompting.org/) - 提示词工程学习资源
 - [Prompt Engineering Guide](https://www.promptingguide.ai/) - 提示词工程指南
+
 
 ## 待探索
 - [GitHub Topics: ChatGPT](https://github.com/topics/chatgpt) - ChatGPT 相关项目
