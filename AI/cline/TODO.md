@@ -52,3 +52,4 @@
 https://github.com/anthropics/anthropic-cookbook
 
 这里写了提示词的使用方法，其中第一个就是总结
+学习方式，使用cline翻译成中文再进行学习。诶～ 该好好学英文了
