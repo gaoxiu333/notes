@@ -1,71 +1,284 @@
+# Cline Memory Bank Cheatsheet
 
-## 快速设置
+## 核心概念
 
-1. 安装或打开Cline
-2. 复制Custom Instructions（从文档中的代码块）
-3. 粘贴到Cline - 添加为custom instructions或.clinerules文件
-4. 初始化 - 要求Cline "initialize memory bank"
+Memory Bank是一个结构化的文档系统,使Cline能够跨会话维持上下文。它通过在项目中维护一系列Markdown文件来保存项目知识。
+
+```mermaid
+flowchart TD
+    PB[projectbrief.md] --> PC[productContext.md]
+    PB --> SP[systemPatterns.md]
+    PB --> TC[techContext.md]
+    
+    PC --> AC[activeContext.md]
+    SP --> AC
+    TC --> AC
+    
+    AC --> P[progress.md]
+```
 
 ## 核心文件结构
 
+1. **projectbrief.md**
+   - 项目基础文档
+   - 定义核心需求和目标
+   - 项目范围的真实来源
+   
+   示例:
+   ```markdown
+   # 项目简介
+   构建一个React库存管理系统,支持条码扫描功能。
+   
+   ## 核心需求
+   - 多仓库支持
+   - 实时库存更新
+   - 移动设备友好
+   ```
+
+2. **productContext.md**
+   - 项目存在的原因
+   - 解决的问题
+   - 产品如何工作
+   - 用户体验目标
+   
+   示例:
+   ```markdown
+   # 产品背景
+   现有库存管理系统存在延迟问题，无法支持多仓库协同。
+
+   ## 解决方案
+   - 实时数据同步架构
+   - 分布式仓库管理
+   - 移动优先的UI设计
+   ```
+
+3. **activeContext.md** (最常更新)
+   - 当前工作重点
+   - 最近的更改
+   - 下一步计划
+   - 重要模式和见解
+   
+   示例:
+   ```markdown
+   # 当前状态
+   正在实现条码扫描组件。
+
+   ## 最近更改
+   - 完成API集成
+   - 优化扫描性能
+   - 添加错误处理
+
+   ## 下一步
+   - 实现批量扫描
+   - 添加离线模式
+   ```
+
+4. **systemPatterns.md**
+   - 系统架构
+   - 关键技术决策
+   - 设计模式使用
+   - 组件关系
+   
+   示例:
+   ```markdown
+   # 系统架构
+   采用微服务架构，前后端分离。
+
+   ## 设计模式
+   - 仓库模式：状态管理
+   - 观察者模式：实时更新
+   - 策略模式：多仓库路由
+
+   ## 技术栈选择原因
+   - React: 组件复用，性能优化
+   - GraphQL: 灵活数据查询
+   ```
+
+5. **techContext.md**
+   - 使用的技术栈
+   - 开发环境设置
+   - 技术约束
+   - 依赖关系
+   
+   示例:
+   ```markdown
+   # 技术栈
+   - React 18
+   - TypeScript 5
+   - Firebase
+   - Jest
+
+   ## 开发环境
+   - Node >= 18
+   - npm >= 9
+   - VSCode配置已同步
+   ```
+
+6. **progress.md**
+   - 已完成功能
+   - 待实现内容
+   - 当前状态
+   - 已知问题
+   
+   示例:
+   ```markdown
+   # 项目进度
+   
+   ## 已完成 (80%)
+   - ✅ 用户认证
+   - ✅ 基础UI
+   - ✅ API集成
+   
+   ## 进行中 (15%)
+   - 🟡 条码扫描
+   - 🟡 离线模式
+   
+   ## 待开始 (5%)
+   - ⭕️ 报表系统
+   - ⭕️ 性能优化
+   ```
+   
+## 扩展上下文文件
+
+根据项目需要可以创建额外的文档:
+
+1. **features/** - 复杂功能文档
+   ```markdown
+   features/
+   ├── barcode-scanning.md  # 条码扫描实现细节
+   ├── inventory-sync.md    # 库存同步机制
+   └── reporting.md        # 报表生成系统
+   ```
+
+2. **api/** - API文档
+   ```markdown
+   api/
+   ├── endpoints.md    # API端点描述
+   ├── models.md      # 数据模型
+   └── examples.md    # 使用示例
+   ```
+
+3. **deployment/** - 部署文档
+   ```markdown
+   deployment/
+   ├── setup.md       # 环境设置
+   ├── docker.md      # 容器配置
+   └── monitoring.md  # 监控方案
+   ```
+
+## 工作流程
+
+### Plan模式工作流
+```mermaid
+flowchart LR
+    A[开始] --> B[读取Memory Bank文件]
+    B --> C{文件完整?}
+    C -->|否| D[创建计划]
+    C -->|是| E[验证上下文]
+    D --> F[记录方案]
+    E --> G[制定策略]
+    G --> H[展示方案]
+
+    style A fill:#e1f5fe
+    style C fill:#fff3e0
+    style G fill:#e8f5e9
 ```
-memory-bank/
-├── projectbrief.md     # 项目基础文档
-├── productContext.md   # 产品上下文
-├── systemPatterns.md   # 系统架构与模式
-├── techContext.md      # 技术上下文
-├── activeContext.md    # 当前工作焦点
-└── progress.md         # 进度与状态
+
+### Act模式工作流
+```mermaid
+flowchart LR
+    A[开始] --> B[检查Memory Bank]
+    B --> C[更新文档]
+    C --> D[执行任务]
+    D --> E[记录变更]
+
+    style A fill:#e1f5fe
+    style D fill:#e8f5e9
+    style E fill:#fff3e0
 ```
 
-## 关键命令
+## 常用命令
 
-- `"follow your custom instructions"` - 让Cline读取Memory Bank文件并继续工作（开始任务时使用）
-- `"initialize memory bank"` - 开始新项目时使用
-- `"update memory bank"` - 触发完整的文档审查和更新
+### 基础命令
+- `follow your custom instructions` - 读取Memory Bank并继续工作
+- `initialize memory bank` - 初始化新项目
+- `update memory bank` - 触发完整文档审查和更新
 
-## 核心工作流
+### 典型使用场景
 
-### 计划模式 (Plan Mode)
+1. **初始化新项目**
+   ```bash
+   # 1. 创建Memory Bank配置
+   新建 .clinerules 文件或设置Custom Instructions
+   
+   # 2. 初始化项目
+   > initialize memory bank
+   
+   # 3. 确认所有文件已创建
+   > follow your custom instructions
+   ```
 
-- 用于策略讨论和高层次规划
-- 读取Memory Bank → 验证上下文 → 制定策略 → 提出方法
+2. **日常工作流**
+   ```bash
+   # 1. 开始新任务时
+   > follow your custom instructions
+   
+   # 2. 完成重要更改后
+   > update memory bank
+   
+   # 3. 上下文窗口接近限制时
+   > update memory bank
+   > [开始新对话]
+   > follow your custom instructions
+   ```
 
-### 执行模式 (Act Mode)
-
-- 用于实施和执行特定任务
-- 检查Memory Bank → 更新文档 → 执行任务 → 记录变更
-
-## 文件用途
-
-|文件|用途|更新频率|
-|---|---|---|
-|projectbrief.md|项目基础、需求和目标|低|
-|productContext.md|项目存在的原因、解决的问题|低|
-|activeContext.md|当前工作焦点、最近更改|高|
-|systemPatterns.md|系统架构、技术决策、设计模式|中|
-|techContext.md|使用的技术、开发环境、技术约束|中|
-|progress.md|已完成工作、待做事项、当前状态|高|
+3. **切换工作模式**
+   ```bash
+   # 规划新功能
+   > switch to plan mode
+   
+   # 开始实现
+   > switch to act mode
+   ```
 
 ## 最佳实践
 
-- 用简单的项目简介开始，让结构随时间演变
-- 让文档更新自然发生，不要强制更新
-- 每次会话开始时确认上下文
-- 在实现重大更改后更新Memory Bank
-- 内容窗口接近填满时更新Memory Bank并开始新会话
+1. **文档更新时机**
+   - 发现新的项目模式时
+   - 实施重大更改后
+   - 使用update memory bank命令时
+   - 需要澄清上下文时
 
-## 提示
+2. **上下文窗口管理**
+   - 当对话变慢时:
+     1. 使用"update memory bank"保存状态
+     2. 开始新对话
+     3. 使用"follow your custom instructions"恢复上下文
 
-- Memory Bank文件是存储在项目中的普通markdown文件
-- 可以全局应用（Custom Instructions）或项目特定（.clinerules）
-- 可以创建额外文件来组织复杂功能、API文档、测试策略等
-- 这种方法也适用于非编程项目
+3. **项目启动**
+   - 从基本项目简介开始
+   - 让结构自然演进
+   - 根据工作流程调整文件
 
-```
+4. **持续工作**
+   - 让模式自然形成
+   - 文档更新应该是有机的
+   - 每次会话开始时确认上下文
+
+## 配置方式
+
+1. **全局配置** (Custom Instructions)
+   - VSCode Cline扩展设置
+   - 适用于所有项目
+
+2. **项目配置** (.clinerules)
+   - 在项目根目录创建
+   - 仅适用于特定项目
 
 ## 注意事项
-- Cline在会话之间完全重置内存，Memory Bank是唯一的知识连接
-- 精确维护文档对Cline的有效性至关重要
-- 定期使用"update memory bank"命令确保所有上下文都被保存
-```
+
+- Memory Bank是Cline连接之前工作的唯一方式
+- 必须在每个任务开始时阅读所有Memory Bank文件
+- 文档必须保持精确和清晰
+- 支持任何类型的项目(不仅限于编程)
+- 可以与其他AI工具配合使用

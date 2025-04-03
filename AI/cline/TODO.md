@@ -47,3 +47,8 @@
   - 快速知识检索
   - 知识关联发现
   - 持续积累优化
+
+
+https://github.com/anthropics/anthropic-cookbook
+
+这里写了提示词的使用方法，其中第一个就是总结
