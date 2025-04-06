@@ -1,3 +1,4 @@
+参考：https://ezyang.github.io/ai-blindspots/
 LLM中的盲点：AI编程实践观察(Sonnet系列模型为重点)。未来可能会针对这些问题提出Cursor规则建议。
 
 ## 三法则原则(Rule of Three)
