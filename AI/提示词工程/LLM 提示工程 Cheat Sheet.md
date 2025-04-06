@@ -1,3 +1,4 @@
+Blindspots in LLMs I’ve noticed while AI coding. Sonnet family emphasis. Maybe I will eventually suggest Cursor rules for these problems.
 # LLM 提示词 Cheat Sheet 🚀
 
 ## 基本概念
