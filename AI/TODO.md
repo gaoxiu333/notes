@@ -51,3 +51,12 @@ This has saved me days of frustration to just a few minutes. Life changing.
 我的温度调整始终为0，为了让AI可以在0的情况下有更多的自主权，保证提示词足够简洁，根据以下提示词技巧来优化提示词
 如：...
 也可以根据模型是否已经支持思维链来添加是否需要思维链技巧？
+
+🎨**[直观解释 MCP](https://x.com/akshay_pachaar/status/1900170356494917936)** - 一图胜千言。
+🚀 **[AI Native Dev](https://ainativedev.io/)** - Tessl.io 为开发人员构建 AI 应用程序的新中心
+
+**[Vibe 编码教程和最佳实践（Cursor / Windsurf）](https://www.youtube.com/watch?v=YWwS911iLhg)** - Matthew Berman 为 vibe 编码开发人员分享他的编码堆栈和最佳实践。🧩
+
+**[使用模型上下文协议构建代理 - Anthropic 的 Mahesh Murag](https://www.youtube.com/watch?v=kQmXtrmQ5Zg)** - 与 MCP 创建者进行深入问答，探讨协议如何统一 AI 系统和数据源。
+
+https://generativeprogrammer.com/ 每周总结写的很好

@@ -1,8 +1,14 @@
+[来源链接](https://addyo.substack.com/p/beyond-the-70-maximizing-the-human)
+
+作者：Addy Osmani
+
+---
+
 [![Elevate](https://substackcdn.com/image/fetch/w_80,h_80,c_fill,f_auto,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe3704470-b6d5-48a9-a9d1-564bd833fc5c_1280x1280.png)](https://addyo.substack.com/)
 
 # [![Elevate](https://substackcdn.com/image/fetch/e_trim:10:white/e_trim:10:transparent/h_72,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F83d3e6c3-4aeb-4158-a76d-cd1c05502c96_3300x660.png)](https://addyo.substack.com/)
 
-# GenAI时代如何有效领导工程团队
+# Beyond the 70%: Maximizing the human 30% of AI-assisted coding
 
 ### 软件工程领导者的实用指南
 
