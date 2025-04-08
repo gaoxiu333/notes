@@ -60,3 +60,11 @@ This has saved me days of frustration to just a few minutes. Life changing.
 **[使用模型上下文协议构建代理 - Anthropic 的 Mahesh Murag](https://www.youtube.com/watch?v=kQmXtrmQ5Zg)** - 与 MCP 创建者进行深入问答，探讨协议如何统一 AI 系统和数据源。
 
 https://generativeprogrammer.com/ 每周总结写的很好
+
+
+
+## 提示词笔记
+如何做呢，AI 发展的很快，提示词发展的也很快，也很庞杂
+提示词可以分为日常使用和拓展（需要解决日常紧急且复杂的任务时）
+另一个就是开发了，这一块可能需要很多技巧
+那就先做一个日常的
