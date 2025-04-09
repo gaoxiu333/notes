@@ -26,6 +26,8 @@
 - [Prompt Engineering Discord](https://discord.gg/promptengineering)
 - [知乎提示工程话题](https://www.zhihu.com/topic/20767624)
 - [HuggingFace论坛](https://discuss.huggingface.co/c/prompt-engineering/18)
+- [AI原生开发](https://landscape.ainativedev.io/) - 汇总分类最新ai产品等网站
+- [技术博客](https://lilianweng.github.io/) - 一个博客
 
 ## 6. 模型平台
 - [OpenAI](https://platform.openai.com/)

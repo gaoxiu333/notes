@@ -44,3 +44,6 @@
 - [Casibase  卡西贝](https://casibase.org/docs/category/beginner-guide/)
 
 ## 助手？
+
+- [AI原生开发](https://landscape.ainativedev.io/) - 汇总分类最新ai产品等网站
+- [技术博客](https://lilianweng.github.io/) - 一个博客
