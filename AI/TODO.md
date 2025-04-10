@@ -70,3 +70,14 @@ https://generativeprogrammer.com/ 每周总结写的很好
 那就先做一个日常的
 
 另外需要添加一个每周阅读的版块（订阅吧）也不知道什么时候能把日常订阅摘录学习这一块搞定
+
+
+## 文章/工具｜Spec Driven  规范驱动
+- [AISpec](https://github.com/cbora/aispec?tab=readme-ov-file) - 一个新兴的提示词规范，有很多值得学习、借鉴参考的观点，初看时非常值得深入研究。
+- [Carrot](https://github.com/talvinder/carrot-product-requirements-document-prd) - 一篇探讨PRD文档生成的提示词规范，作为储备吧
+
+## 提示词设计理念
+最开始只是有一个意图，但是这个意图是模糊的，直接告诉AI，可以能会获得没有边界的结果
+但是如果你告诉AI你想要的结果是什么，AI就会在这个范围内进行思考
+也可以通过你的意图引导AI生成更符合你意图的提示，再给AI
+比如：[SpecStory](https://specstory.com/) 这样的工具
