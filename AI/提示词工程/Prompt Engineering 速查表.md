@@ -28,6 +28,7 @@
 
 - "用简洁、轻松的语气写一个 LinkedIn 帖子"
 - "用学术语言撰写一段论文引言"
+- // 三岁的孩子一样
 
 ### **三、进阶策略**
 
@@ -96,7 +97,4 @@
 - [向量数据库列表](https://www.datacamp.com/blog/the-top-5-vector-databases)
 
 ### **参考资源**
-
-- https://arxiv.org/abs/2205.11916 (这篇论文的概括还不错)
-- https://www.promptingguide.ai/zh/techniques/ape (自动提示词，下边还有很多参考)
 -  [Anthropic 创建测试用例](https://docs.anthropic.com/en/docs/test-and-evaluate/eval-tool#creating-test-cases) - 更好的例子，让AI生成例子
