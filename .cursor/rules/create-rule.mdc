@@ -1,4 +1,9 @@
 ---
+description: 
+globs: *.mdc
+alwaysApply: false
+---
+---
 description: Cursor Rules Location
 globs: *.mdc
 ---
