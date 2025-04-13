@@ -1,0 +1,94 @@
+{
+  "settings": {
+    "CUSTOM_REGEXPS": {
+      "图片遮盖": "",
+      "填空题": "",
+      "问答题": "^Q: ((?:.+\\n)*)\\n*A: (.+(?:\\n(?:^.{1,3}$|^.{4}(?<!<!--).*))*)",
+      "问答题（同时生成翻转的卡片<可选>）": "",
+      "问答题（同时生成翻转的卡片）": "",
+      "问答题（输入答案）": ""
+    },
+    "FILE_LINK_FIELDS": {
+      "图片遮盖": "遮盖",
+      "填空题": "文字",
+      "问答题": "正面",
+      "问答题（同时生成翻转的卡片<可选>）": "正面",
+      "问答题（同时生成翻转的卡片）": "正面",
+      "问答题（输入答案）": "正面"
+    },
+    "CONTEXT_FIELDS": {},
+    "FOLDER_DECKS": {
+      "面试题": "11",
+      "test": "Default1"
+    },
+    "FOLDER_TAGS": {
+      "面试题": "2",
+      "test": ""
+    },
+    "Syntax": {
+      "Begin Note": "START",
+      "End Note": "END",
+      "Begin Inline Note": "STARTI",
+      "End Inline Note": "ENDI",
+      "Target Deck Line": "TARGET DECK",
+      "File Tags Line": "FILE TAGS",
+      "Delete Note Line": "DELETE",
+      "Frozen Fields Line": "FROZEN"
+    },
+    "Defaults": {
+      "Scan Directory": "",
+      "Tag": "Obsidian_to_Anki",
+      "Deck": "Default",
+      "Scheduling Interval": 0,
+      "Add File Link": false,
+      "Add Context": false,
+      "CurlyCloze": false,
+      "CurlyCloze - Highlights to Clozes": false,
+      "ID Comments": true,
+      "Add Obsidian Tags": false
+    },
+    "IGNORED_FILE_GLOBS": [
+      "**/*.excalidraw.md"
+    ]
+  },
+  "Added Media": [],
+  "File Hashes": {
+    "面试题/测试 AnKi.md": "e1ea6efee4ff46b73303de1248730e7a",
+    "test/test.md": "bbf2950cf007c81917e39381b641150f",
+    "README.md": "a998070b2fce928375b8070f125ec423",
+    "未命名 2.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "未命名 1.md": "d41d8cd98f00b204e9800998ecf8427e",
+    "test/test2.md": "3e5f6e0a6ed83b591c5d87fb6e528c04",
+    "test/未命名.md": "e4b963d6baf16fc6f00e38585c4ee27c"
+  },
+  "fields_dict": {
+    "图片遮盖": [
+      "遮盖",
+      "图片",
+      "标题",
+      "背面额外",
+      "注释"
+    ],
+    "填空题": [
+      "文字",
+      "背面额外"
+    ],
+    "问答题": [
+      "正面",
+      "背面"
+    ],
+    "问答题（同时生成翻转的卡片<可选>）": [
+      "正面",
+      "背面",
+      "增加翻转的卡片"
+    ],
+    "问答题（同时生成翻转的卡片）": [
+      "正面",
+      "背面"
+    ],
+    "问答题（输入答案）": [
+      "正面",
+      "背面"
+    ]
+  }
+}

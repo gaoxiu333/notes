@@ -1,0 +1,297 @@
+{
+  "main": {
+    "id": "3bb9e4ed60a4cd36",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc8e174eb012f6b2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77667a44a674ccdf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/参考/AI 资源.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI 资源"
+            }
+          },
+          {
+            "id": "df10901c26983dbc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/使用及开发体验/Claude.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Claude"
+            }
+          },
+          {
+            "id": "7a7ce7fec6995d97",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/使用及开发体验/Claude.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Claude"
+            }
+          },
+          {
+            "id": "cdcf21963573e78d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/参考/AI Tools.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AI Tools"
+            }
+          },
+          {
+            "id": "ca42dfe835bd17a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/提示词工程/系统提示词.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "系统提示词"
+            }
+          },
+          {
+            "id": "5f640c3bc7e1e713",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI/提示词工程/提示词技巧.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "提示词技巧"
+            }
+          },
+          {
+            "id": "a4b5054734038407",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "备忘录/Obsidian.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Obsidian"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ce019f04bf4c727b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0465b9e6f139005",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2f6aff8baed7005d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "095b187da612671d",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "2f39923553419989",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a6d934c4de8cb22c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e62ffd37dedfb4ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e11ef0f40ae6d7d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "面试题/test.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "test 的反向链接列表"
+            }
+          },
+          {
+            "id": "2e239e349ef704e1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "面试题/test.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "test 的出链列表"
+            }
+          },
+          {
+            "id": "63a61f7bd787bf87",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "168303c47c968188",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "面试题/test.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "test 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
+    }
+  },
+  "active": "a4b5054734038407",
+  "lastOpenFiles": [
+    "doing/Cursor.md",
+    "备忘录/Obsidian.md",
+    "doing/Copilot 使用指南.md",
+    "AI/需求.md",
+    "备忘录",
+    "README.md",
+    "AI/TODO.md",
+    "AI/参考/提示词工程学习资源.md",
+    "AI/参考/客户端.md",
+    "AI/提示词工程/提示词技巧.md",
+    "specs/frontend-architecture.md",
+    "specs/backend-architecture.md",
+    "AI/提示词工程/正在看.md",
+    "SPECS.md",
+    "specs",
+    "AI/提示词工程/cheat-sheet.md",
+    "AI/提示词工程/Prompt-Engineering.md",
+    "AI/提示词工程/系统提示词.md",
+    "AI/提示词工程/Prompt Engineering 速查表.md",
+    "AI/提示词工程/提示词草稿.md",
+    "AI/提示词工程/在用提示词.md",
+    "AI/参考/AI Tools.md",
+    "AI/提示词工程/Prompt_Engineering_实用手册_CN.md",
+    "AI/参考/一份参考资料.md",
+    "AI/草稿.md",
+    "AI/提示词工程/概述.md",
+    "AI/README.md.md",
+    "doing",
+    "AI/基础",
+    "AI/使用及开发体验",
+    "AI/参考",
+    "AI/AI 阅读",
+    "AI/草稿.",
+    "AI/草稿",
+    "React",
+    "未命名.canvas",
+    "assets/fiber-brief-intro-dark.png"
+  ]
+}
