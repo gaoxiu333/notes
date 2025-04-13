@@ -9,3 +9,6 @@ AI 辅助阅读是指使用 AI 技术来提升阅读理解和知识获取的效�
 - crawl4ai: https://github.com/unclecode/crawl4ai
   - 功能：网页内容抓取
   - 特点：支持批量获取、自定义规则
+
+## blog
+- [The New Stack](https://thenewstack.io/)

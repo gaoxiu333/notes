@@ -1,14 +1,18 @@
 # Cursor 使用指南
 
+---
+
 ## Rules for AI
 
-ref:https://docs.cursor.com/context/rules-for-ai?ref=ghuntley.com#project-rules-recommended
-第一条规则：让 cursor 编写规则
+**参考文档**：[Rules for AI](https://docs.cursor.com/context/rules-for-ai?ref=ghuntley.com#project-rules-recommended)
 
-- Project Rules(推荐)
-  - `Cmd + Shift + P` -> `Cursor: Create Rule`
-- Global Rules
-- `.cursorrules`(兼容模式，未来将被删除，不建议使用)
+### 规则概念
+
+- **Project Rules（推荐）** - 使用快捷键：`Cmd + Shift + P` -> `Cursor: Create Rule`
+- **Global Rules** - 全局规则，适用于整个项目
+- **`.cursorrules`（兼容模式，不建议使用）** - 未来将被删除，建议迁移到 Project Rules
+
+第一条规则：让 Cursor 编写规则
 
 ````
 ---
@@ -88,17 +92,22 @@ metadata:
 </rule>
 ````
 
-## 给自己的项目写规范
+## 常用提示词
+
+### 给自己的项目写规范
+
 ```
 将规范写入 “specs/” 文件夹，并将每个域主题（包括技术主题）作为单独的 markdown 文件写入。在目录的根目录中创建一个 “SPECS.md”，这是一个概述文档，其中包含一个链接到所有规范的表格。
 ```
-## 检测规则
+
+### 检测规则
 
 ```
 查看 @.cursor 中的 Rust 规则。有哪些规则缺失？哪些不符合最佳实践？
 ```
 
-## 执行
+### 执行
+
 ```
 阅读 @SPECS.md 以获取功能规范。
 阅读 @.cursor 以了解技术要求。

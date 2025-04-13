@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "备忘录/Obsidian.md",
+                "file": "AI/需求.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Obsidian"
+              "title": "需求"
             }
           }
         ],
@@ -256,12 +256,19 @@
   },
   "active": "a4b5054734038407",
   "lastOpenFiles": [
+    "AI/草稿.md",
+    "AI/LLM-数据的输入.md",
+    "AI/vibe code/vibe-code介绍.md",
+    "AI/vibe code/Copilot 使用指南.md",
+    "AI/vibe code/Cursor.md",
+    "AI/vibe code",
     "doing/Cursor.md",
-    "备忘录/Obsidian.md",
     "doing/Copilot 使用指南.md",
+    "React/apis.md",
+    "README.md",
+    "备忘录/Obsidian.md",
     "AI/需求.md",
     "备忘录",
-    "README.md",
     "AI/TODO.md",
     "AI/参考/提示词工程学习资源.md",
     "AI/参考/客户端.md",
@@ -278,11 +285,6 @@
     "AI/提示词工程/提示词草稿.md",
     "AI/提示词工程/在用提示词.md",
     "AI/参考/AI Tools.md",
-    "AI/提示词工程/Prompt_Engineering_实用手册_CN.md",
-    "AI/参考/一份参考资料.md",
-    "AI/草稿.md",
-    "AI/提示词工程/概述.md",
-    "AI/README.md.md",
     "doing",
     "AI/基础",
     "AI/使用及开发体验",
@@ -290,7 +292,6 @@
     "AI/AI 阅读",
     "AI/草稿.",
     "AI/草稿",
-    "React",
     "未命名.canvas",
     "assets/fiber-brief-intro-dark.png"
   ]
