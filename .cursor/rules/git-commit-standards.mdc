@@ -1,0 +1,60 @@
+---
+description: Git提交信息规范
+globs: .git/COMMIT_EDITMSG
+---
+# Git提交信息规范
+
+确保团队遵循一致的Git提交信息格式，提高代码库历史记录的可读性和可维护性。
+
+<rule>
+name: git_commit_standards
+description: 规范Git提交信息的格式和内容
+
+filters:
+  - type: file_path
+    pattern: "\\.git/COMMIT_EDITMSG$"
+  - type: event
+    pattern: "file_modify"
+
+actions:
+  - type: suggest
+    conditions:
+      - pattern: "^(?!feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(.{1,}?):\\s"
+        message: "提交信息应以类型前缀开始，如: feat: 添加新功能"
+
+  - type: suggest
+    conditions:
+      - pattern: "^.{1,}?:.{50,}"
+        message: "提交标题行应保持在50个字符以内"
+
+  - type: suggest
+    conditions:
+      - pattern: "^.{1,}?:[^A-Z]"
+        message: "提交信息内容应以大写字母开始"
+        
+  - type: suggest
+    conditions:
+      - pattern: "^.+$\\n(?!\\n)"
+        message: "标题行后应有一个空行，再跟正文内容"
+
+examples:
+  - input: |
+      更新了登录页面
+    output: |
+      feat: 更新登录页面UI和验证逻辑
+      
+      - 优化了表单布局
+      - 增加了密码强度检查
+  
+  - input: |
+      fix:修复bug
+    output: |
+      fix: 修复用户注册表单验证失败的问题
+      
+      解决了当邮箱包含特殊字符时验证失败的问题，
+      修复了#123问题。
+
+metadata:
+  priority: high
+  version: 1.0
+</rule> 
