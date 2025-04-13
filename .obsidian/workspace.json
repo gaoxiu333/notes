@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/提示词工程/系统提示词.md",
-                "mode": "source",
+                "file": "AI/参考/AI 资源.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "系统提示词"
+              "title": "AI 资源"
             }
           },
           {
@@ -97,16 +97,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/需求.md",
+                "file": "doing/TODO.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "需求"
+              "title": "TODO"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -254,37 +254,37 @@
       "obsidian-to-anki-plugin:Obsidian_to_Anki - Scan Vault": false
     }
   },
-  "active": "a4b5054734038407",
+  "active": "ca42dfe835bd17a3",
   "lastOpenFiles": [
-    "AI/草稿.md",
+    "AI/参考/AI 行业调查报告.md",
+    "AI/参考/提示词工程学习资源.md",
+    "AI/参考/客户端.md",
+    "doing/TODO.md",
+    "AI/参考/AI Tools.md",
+    "AI/参考/TODO.md",
+    "AI/参考/AI 资源.md",
+    "AI/参考/AI 模型评测基准.md",
+    "AI/参考/AI 工具梳理(开发).md",
+    "备忘录/Obsidian.md",
+    "React/apis.md",
+    "AI/AI 阅读.md",
+    "AI/提示词工程/系统提示词.md",
+    "AI/需求.md",
+    "AI/README.md.md",
     "AI/LLM-数据的输入.md",
+    "AI/草稿.md",
     "AI/vibe code/vibe-code介绍.md",
     "AI/vibe code/Copilot 使用指南.md",
     "AI/vibe code/Cursor.md",
     "AI/vibe code",
     "doing/Cursor.md",
     "doing/Copilot 使用指南.md",
-    "React/apis.md",
     "README.md",
-    "备忘录/Obsidian.md",
-    "AI/需求.md",
     "备忘录",
-    "AI/TODO.md",
-    "AI/参考/提示词工程学习资源.md",
-    "AI/参考/客户端.md",
     "AI/提示词工程/提示词技巧.md",
     "specs/frontend-architecture.md",
     "specs/backend-architecture.md",
-    "AI/提示词工程/正在看.md",
-    "SPECS.md",
     "specs",
-    "AI/提示词工程/cheat-sheet.md",
-    "AI/提示词工程/Prompt-Engineering.md",
-    "AI/提示词工程/系统提示词.md",
-    "AI/提示词工程/Prompt Engineering 速查表.md",
-    "AI/提示词工程/提示词草稿.md",
-    "AI/提示词工程/在用提示词.md",
-    "AI/参考/AI Tools.md",
     "doing",
     "AI/基础",
     "AI/使用及开发体验",

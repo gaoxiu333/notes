@@ -6,9 +6,13 @@ AI 辅助阅读是指使用 AI 技术来提升阅读理解和知识获取的效�
 ## AI 阅读工具链
 
 ### 1. 爬虫工具
-- crawl4ai: https://github.com/unclecode/crawl4ai
+- [crawl4ai](https://github.com/unclecode/crawl4ai) 
   - 功能：网页内容抓取
   - 特点：支持批量获取、自定义规则
+-  [DevDocs](https://github.com/cyberagiinc/DevDocs)
 
 ## blog
 - [The New Stack](https://thenewstack.io/)
+- [GenAI Agents](https://github.com/NirDiamant/GenAI_Agents) - 学习 Agent 的系列课程
+- [AI Native Dev](https://ainativedev.io/) - 建议每日一读（由tessl.io构建）
+- [Generative Programmer](https://generativeprogrammer.com/) - 最近一直在看的blog
