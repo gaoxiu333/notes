@@ -97,12 +97,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/提示词工程/在用提示词.md",
+                "file": "AI/提示词工程/Prompt_Engineering_实用手册_CN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "在用提示词"
+              "title": "Prompt_Engineering_实用手册_CN"
             }
           },
           {
@@ -284,14 +284,16 @@
   },
   "active": "ae6f019df7a1273b",
   "lastOpenFiles": [
-    "AI/AI 阅读/12条避免编程挫败感的规则.md",
     "AI/提示词工程/Prompt-Engineering.md",
     "AI/提示词工程/Prompt_Engineering_实用手册_CN.md",
     "AI/提示词工程/cheat-sheet.md",
-    "doing/正在看.md",
-    "AI/提示词工程/提示词技巧.md",
     "AI/提示词工程/系统提示词.md",
     "AI/提示词工程/在用提示词.md",
+    "AI/提示词工程/技巧示例.md",
+    "AI/提示词工程/提示词技巧.md",
+    "AI/提示词工程/提示词示例.md",
+    "AI/AI 阅读/12条避免编程挫败感的规则.md",
+    "doing/正在看.md",
     "AI/参考/AI 模型评测基准.md",
     "AI/参考/AI 工具梳理(开发).md",
     "AI/参考/提示词工程学习资源.md",
@@ -310,8 +312,6 @@
     "AI/参考/AI Tools.md",
     "AI/参考/TODO.md",
     "备忘录/Obsidian.md",
-    "React/apis.md",
-    "AI/AI 阅读.md",
     "AI/vibe code",
     "备忘录",
     "specs",
