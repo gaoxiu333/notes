@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/提示词工程/系统提示词.md",
+                "file": "doing/Google_提示工程.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "系统提示词"
+              "title": "Google_提示工程"
+            }
+          },
+          {
+            "id": "9737a45c674871ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "doing/提示词.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "提示词"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AI/提示词工程/系统提示词.md",
+                "file": "doing/提示词.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "系统提示词 的反向链接列表"
+              "title": "提示词 的反向链接列表"
             }
           },
           {
@@ -168,37 +183,38 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cb2a46de7dcf0488",
+  "active": "9737a45c674871ba",
   "lastOpenFiles": [
-    "未命名.canvas",
-    "AI/AI 阅读.md",
-    "README.md",
-    "备忘录/Obsidian.md",
-    "备忘录",
-    "doing/正在看.md",
-    "doing/日常.md",
+    "doing/Google_提示工程.md",
+    "doing/提示词.md",
     "doing/提示工程示例.md",
     "doing/提示工程-cheat-sheet.md",
     "doing/TODO.md",
-    "doing/Google_提示工程.md",
+    "AI/vibe code/vibe-code介绍.md",
+    "doing/提示词草稿.md",
+    "doing/日常.md",
     "doing/APE.md",
     "doing/22365_3_Prompt Engineering_v7.pdf",
+    "README.md",
+    "AI/参考/客户端.md",
+    "AI/参考/AI 资源.md",
+    "AI/参考/AI Tools.md",
     "AI/参考/AI 行业调查报告.md",
-    "AI/vibe code/vibe-code介绍.md",
+    "AI/参考/AI 模型评测基准.md",
+    "AI/参考/AI 工具梳理(开发).md",
+    "AI/参考/提示词工程学习资源.md",
+    "doing/正在看.md",
     "AI/vibe code/Cursor.md",
     "AI/vibe code/Copilot 使用指南.md",
-    "AI/vibe code",
-    "AI/提示词工程/未命名 1.md",
-    "AI/提示词工程/在用提示词.md",
+    "AI/AI 阅读.md",
+    "AI/AI 阅读/收藏文章.md",
     "AI/提示词工程/cheat-sheet.md",
-    "AI/提示词工程/Prompt-Engineering.md",
-    "AI/需求.md",
-    "AI/AI_Blindspots.md",
-    "AI/参考/客户端.md",
-    "AI/提示词工程/概述.md",
-    "AI/提示词工程/templates/knowledge-graph-template.md",
-    "AI/提示词工程/Prompt_Engineering_实用手册_CN.md",
-    "AI/提示词工程/Prompt_Engineering_实用手册.md",
+    "AI/提示词工程/在用提示词.md",
+    "AI/提示词工程/系统提示词.md",
+    "未命名.canvas",
+    "备忘录/Obsidian.md",
+    "备忘录",
+    "AI/vibe code",
     "pdf_translation_comparison.ipynb",
     "pdf_translator_comparison.ipynb",
     "files/chat-gpt-cheat-sheet-v2-v0-eunvmybl9cua1.webp",

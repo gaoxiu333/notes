@@ -13,3 +13,5 @@
 
 - [AI原生开发](https://landscape.ainativedev.io/) - 汇总分类最新ai产品等网站
 - [技术博客](https://lilianweng.github.io/) - 一个博客
+- [Cline 文档和最佳实践](https://github.com/nickbaumann98/cline_docs)
+- [GitHub Copilot 最佳实践](https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot)

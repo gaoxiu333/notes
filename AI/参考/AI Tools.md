@@ -30,8 +30,6 @@
 ## 最佳实践
 
 ### 使用指南
-- [Cline 文档和最佳实践](https://github.com/nickbaumann98/cline_docs)
-- [GitHub Copilot 最佳实践](https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot)
 
 ### 工作流集成
 - 如何将 AI 工具融入现有开发流程
