@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "doing/进阶 Prompt 技巧 Cheatsheet.md",
-                "mode": "source",
+                "file": "doing/提示工程示例.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "进阶 Prompt 技巧 Cheatsheet"
+              "title": "提示工程示例"
             }
           },
           {
@@ -242,10 +242,13 @@
   },
   "active": "8c4c6927f41d6e9e",
   "lastOpenFiles": [
+    "doing/提示词草稿.md",
+    "doing/日常.md",
+    "doing/进阶 Prompt 技巧 Cheatsheet.md",
+    "doing/提示工程-cheat-sheet.md",
     "doing/正在看.md",
     "doing/APE.md",
     "doing/Google_提示工程.md",
-    "doing/进阶 Prompt 技巧 Cheatsheet.md",
     "Google_提示工程.pdf",
     "Prompt Engineering 术语备忘录.pdf",
     "doing/Prompt Engineering 术语备忘录.md",
@@ -253,10 +256,7 @@
     "doing/TODO.md",
     "doing/22365_3_Prompt Engineering_v7.pdf",
     "doing/推理提示词.md",
-    "doing/日常.md",
     "doing/提示词.md",
-    "doing/提示词草稿.md",
-    "doing/提示工程-cheat-sheet.md",
     "doing/提示工程示例.md",
     "AI/architecture/classification-guide.md",
     "未命名.canvas",
