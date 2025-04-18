@@ -19,4 +19,8 @@ AI 辅助阅读是指使用 AI 技术来提升阅读理解和知识获取的效�
 - [常见的代理食谱](https://www.agentrecipes.com/) - 关于使用代理的设计方案
 - [Prompts.chat Prompts.chat](https://prompts.chat/) - 提示词仓库
 - [检索增强生成 (RAG) 简介](https://weaviate.io/blog/introduction-to-rag) - 一篇很通俗但也有深度的 RAG 文章（对我解惑了）
+- [Bilgin Ibryam](https://substack.com/@bibryam?utm_source=substack-feed-item)
+[One Useful Thing](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough) - 偶尔有作者自己对的偏见想法，所以可以偶尔看看
+	比如：[它能力的锯齿状边界的形状](https://www.oneusefulthing.org/p/centaurs-and-cyborgs-on-the-jagged?utm_source=publication-search)、[赋予人工智能犯错的能力来稍微降低幻觉的发生率，](https://docs.anthropic.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations#example-analyzing-a-merger-and-acquisition-report)
+[uber](https://www.uber.com/en-IN/blog/introducing-the-prompt-engineering-toolkit/) Uber 的提示词架构，堪称我心目中的最佳实践
 

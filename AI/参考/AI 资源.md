@@ -15,3 +15,5 @@
 - [技术博客](https://lilianweng.github.io/) - 一个博客
 - [Cline 文档和最佳实践](https://github.com/nickbaumann98/cline_docs)
 - [GitHub Copilot 最佳实践](https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot)
+- [AI 相关的合集资料](https://github.com/chiphuyen/aie-book/blob/main/resources.md)
+- 
