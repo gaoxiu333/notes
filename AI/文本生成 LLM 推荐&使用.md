@@ -5,7 +5,7 @@
 - [Sora](https://sora.com/explore) 生成图片/视频（Plus没过期之前可用）
 - 最佳模型
 	- GPT-4o
-	- GPT-3o
+	- GPT-o3
 ## Claude
 和 ChatGPT 不相上下，在文案/代码等写作方面更胜一筹。（会员被封，退款开了ChatGPT会员）
 - [官网地址](https://claude.ai/)
