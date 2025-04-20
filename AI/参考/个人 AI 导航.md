@@ -1,5 +1,5 @@
 
-## 咨询
+## 资讯
 - [AINativeDev](https://landscape.ainativedev.io/) - 人工智能开发生态系统指南
 ## 客户端
 **官方**
