@@ -6,14 +6,14 @@
 
 - [index your code](https://docs.cursor.com/context/codebase-indexing)
 - @-symbols
-  常用：
-  - @Files/@Folders/@code 定位代码作为引用
-  - @web/@Docs 外部文档
-  - @rules 使用规则
-  - @Definitions 定义
-  - @Lint errors 检查错误
-    高级：
-  - @Recent Changes 最近修改的代码作为引用
+  - **常用：**
+    - @Files/@Folders/@code - 定位代码作为引用
+    - @web/@Docs - 外部文档
+    - @rules - 使用规则
+    - @Definitions - 定义
+    - @Lint errors - 检查错误
+  - **高级：**
+    - @Recent Changes - 最近修改的代码作为引用
 
 ## MCP
 
@@ -25,8 +25,9 @@
 
 ## Rules for AI
 
-作用：让 Cursor 按照你的规则来工作
-参考文档：[Rules for AI](https://docs.cursor.com/context/rules-for-ai?ref=ghuntley.com#project-rules-recommended)
+**作用**：让 Cursor 按照你的规则来工作
+
+**参考文档**：[Rules for AI](https://docs.cursor.com/context/rules-for-ai?ref=ghuntley.com#project-rules-recommended)
 
 ### 规则概念
 
@@ -34,16 +35,16 @@
 - **Global Rules** - 全局规则，适用于整个项目
 - **`.cursorrules`（兼容模式，不建议使用）** - 未来将被删除，建议迁移到 Project Rules
 
-#### 第一条规则
+### 第一条规则
 
 让 Cursor 编写规则的规则
+
 这个规则规定了 Cursor 规则文件(.mdc)必须存放在项目根目录的.cursor/rules/文件夹中，并要求使用 kebab-case 命名格式。
 
+```
 ---
-
 description: Cursor 规则位置
 globs: \*.mdc
-
 ---
 
 # Cursor 规则位置
@@ -126,6 +127,7 @@ metadata:
 priority: high
 version: 1.0
 </rule>
+```
 
 ## 常用提示词
 
