@@ -6,7 +6,7 @@
 - [**ChatGPT（OpenAI）**](https://openai.com/chatgpt) 
 - [**Claude（Anthropic）**](https://www.anthropic.com/index/claude) 
 - [**Perplexity**](https://www.perplexity.ai/) 
-- [*Gemini（Google）](https://gemini.google.com/app)
+- [Gemini（Google）](https://gemini.google.com/app)
 - [**Grok（x.ai）**](https://x.ai/) 
 **第三方**
 - [**ChatGPT Next Web**](https://github.com/ChatGPTNextWeb/NextChat) - 功能齐全，配置简单
