@@ -1,0 +1,124 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# React项目Feature-Sliced Design架构规范
+
+<rule>
+name: react_fsd_structure
+description: 检查项目结构是否符合Feature-Sliced Design架构规范
+filters:
+  - type: file_path
+    pattern: "src/.*\\.(jsx|tsx|js|ts)$"
+
+actions:
+  # 检查导入规则 - 确保单向依赖
+  - type: lint
+    message: "违反FSD单向依赖规则：高层不能导入同层或更高层的模块"
+    conditions:
+      # App层导入其他层
+      - pattern: "^src/app/.*import.*from ['\"]app/.*['\"]"
+      # Pages层导入同层或更高层
+      - pattern: "^src/pages/.*import.*from ['\"](mdc:?:app|pages)/.*['\"]"
+      # Widgets层导入同层或更高层
+      - pattern: "^src/widgets/.*import.*from ['\"](mdc:?:app|pages|widgets)/.*['\"]"
+      # Features层导入同层或更高层
+      - pattern: "^src/features/.*import.*from ['\"](mdc:?:app|pages|widgets|features)/.*['\"]"
+      # Entities层导入同层或更高层
+      - pattern: "^src/entities/.*import.*from ['\"](mdc:?:app|pages|widgets|features|entities)/.*['\"]"
+      # 不使用@x进行跨同层导入
+      - pattern: "^src/entities/.*import.*from ['\"]entities/(?!.*/@x/).*['\"]"
+
+  # 检查切片公共API
+  - type: lint
+    message: "违反FSD公共API规则：切片间导入必须通过公共API (index.ts)"
+    conditions:
+      # 导入应该通过index.ts或特定的@x API，而不是直接导入内部文件
+      - pattern: "import.*from ['\"](mdc:?:entities|features|widgets|pages)/[^/']*/(?!index|@x).*['\"]"
+
+  # 检查分段组织
+  - type: lint
+    message: "违反FSD分段组织规则：UI组件应放在ui分段，业务逻辑应放在model分段，API请求应放在api分段"
+    conditions:
+      # UI组件应该在ui分段
+      - pattern: "^src/(?:entities|features|widgets|pages)/[^/]*/(?!ui).*\\.(?:jsx|tsx)$"
+        not_pattern: "^src/(?:entities|features|widgets|pages)/[^/]*/(?:ui|model|api)/.*\\.(?:jsx|tsx)$"
+      # 业务逻辑应该在model分段
+      - pattern: "^src/(?:entities|features|widgets|pages)/[^/]*/.*(?:slice|store|model|type)\\.(?:ts|js)$"
+        not_pattern: "^src/(?:entities|features|widgets|pages)/[^/]*/model/.*\\.(?:ts|js)$"
+      # API请求应该在api分段
+      - pattern: "^src/(?:entities|features|widgets|pages)/[^/]*/.*(?:api|query|request|fetch)\\.(?:ts|js)$"
+        not_pattern: "^src/(?:entities|features|widgets|pages)/[^/]*/api/.*\\.(?:ts|js)$"
+
+  # 检查Shared层组织
+  - type: lint
+    message: "违反FSD共享层组织规则：共享代码应放在shared层的适当分段"
+    conditions:
+      # UI组件应该在ui分段
+      - pattern: "^src/shared/(?!ui/).*\\.(?:jsx|tsx)$"
+        not_pattern: "^src/shared/(?:ui|api|lib|config)/.*\\.(?:jsx|tsx)$"
+      # API客户端应该在api分段
+      - pattern: "^src/shared/(?!api/).*(?:api|client|request|query)\\.(?:ts|js)$"
+        not_pattern: "^src/shared/api/.*\\.(?:ts|js)$"
+      # 工具函数应该在lib分段
+      - pattern: "^src/shared/(?!lib/).*(?:util|helper|format)\\.(?:ts|js)$"
+        not_pattern: "^src/shared/lib/.*\\.(?:ts|js)$"
+      # 配置应该在config分段
+      - pattern: "^src/shared/(?!config/).*(?:config|env|constant)\\.(?:ts|js)$"
+        not_pattern: "^src/shared/config/.*\\.(?:ts|js)$"
+
+  # 提供建议
+  - type: suggest
+    message: |
+      FSD架构规范提示：
+      
+      1. 层级结构：App > Processes > Pages > Widgets > Features > Entities > Shared
+      2. 单向依赖：各层只能导入层级更低的模块，不能导入同级或更高级的模块
+      3. 切片公共API：跨切片导入必须通过公共API (index.ts)，不能直接导入内部文件
+      4. 分段组织：
+         - UI组件放在 ui/ 分段
+         - 业务逻辑放在 model/ 分段
+         - API请求放在 api/ 分段
+      5. 导入规则：
+         - 同一切片内：使用相对路径导入
+         - 跨切片导入：使用绝对路径导入，且只能导入低层公共API
+         - 跨实体导入：使用@x特殊符号 (entities/user/@x/article)
+      
+      参考完整规范文档：rule/react-fsd-structure-rules.md
+
+examples:
+  - input: |
+      // 良好示例：从低层导入
+      import { Button } from 'shared/ui/button';
+      import { User } from 'entities/user';
+      
+      // 不良示例：从同层导入
+      import { Profile } from 'entities/profile';
+      
+      // 不良示例：从高层导入
+      import { ArticlePage } from 'pages/article';
+    output: |
+      FSD架构规范提示：
+      
+      1. 良好导入：从低层导入，遵循单向依赖原则
+      2. 不良导入：从同层导入，违反单向依赖原则
+      3. 不良导入：从高层导入，违反单向依赖原则
+      
+      应修正为：
+      ```
+      // 良好示例：从低层导入
+      import { Button } from 'shared/ui/button';
+      import { User } from 'entities/user';
+      
+      // 修正：如需使用同层实体，应使用@x特殊符号
+      import { Profile } from 'entities/profile/@x/user';
+      
+      // 修正：不应从高层导入
+      // 可能需要重构代码结构，将共享逻辑移至较低层
+      ```
+
+metadata:
+  priority: high
+  version: 1.0
+</rule>
