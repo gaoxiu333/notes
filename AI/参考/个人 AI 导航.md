@@ -16,6 +16,7 @@
 - [**ChatWise**](https://chatwise.ai/) - 响应极快，适合日常问答
 ## 开发相关
 - [CodeGate](https://github.com/stacklok/codegate) - Debug 工具
+- [x.ai](https://console.x.ai/)
 
 
 
