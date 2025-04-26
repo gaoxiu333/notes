@@ -32,6 +32,10 @@
 **使用趋势**
 [OpenRouter](https://openrouter.ai/rankings?view=trending) - AI 模型性能评测平台（目前开发和日常参照 OpenRouter 已足够）
 
+## 个人订阅
+
+- [Lenny's Newsletter](https://lennysbundle.com/)
+
 **调查报告**
  - [Stack Overflow 开发者调查 2025](https://survey.stackoverflow.co/2024/technology/#1-integrated-development-environment)
 - [JetBrains 开发者生态系统报告](https://www.jetbrains.com/zh-cn/lp/devecosystem-2024/)
