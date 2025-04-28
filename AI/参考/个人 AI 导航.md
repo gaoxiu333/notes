@@ -1,6 +1,6 @@
 
 ## 资讯
-- [AINativeDev](https://landscape.ainativedev.io/) - 人工智能开发生态系统指南
+- [AINativeDev Landscape](https://landscape.ainativedev.io/) - 人工智能开发生态系统指南
 ## 客户端
 **官方**
 - [**ChatGPT（OpenAI）**](https://openai.com/chatgpt) 
