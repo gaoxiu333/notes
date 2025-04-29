@@ -27,3 +27,11 @@ Prompt A
 ## 项目结构参考
 
 项目脚手架使用 `nextjs` ，项目结构参考自：https://github.com/alan2207/bulletproof-react/tree/master/apps/nextjs-app
+
+getzep / graphiti - 知识图谱
+
+
+## 需求
+https://github.com/PatrickJS/awesome-cursorrules
+
+比如 我要创建一个 tw 的rule，可以先搜一下，然后给一个搜到的结果，或者创建一个
