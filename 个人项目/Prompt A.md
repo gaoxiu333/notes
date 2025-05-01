@@ -17,6 +17,8 @@ Prompt A
 - [LLM Survey](https://github.com/RUCAIBox/LLMSurvey/tree/main/Prompts)
 - [泄露的提示词](https://github.com/jujumilk3/leaked-system-prompts)
 - [getzep / graphiti](https://github.com/getzep/graphiti?tab=readme-ov-file) - 知识图谱，初看时，乃是超越 RAG 的上下文之争
+## 不是开源的提示词
+- https://www.promptly.fyi/library
 
 ## 数据
 - [lobe-chat](https://github.com/lobehub/lobe-chat/tree/main/src/config/aiModels)
@@ -53,6 +55,7 @@ https://github.com/PatrickJS/awesome-cursorrules
 **具体场景**
 - 我需要实现一个代码仓库分析器，以便于我从中寻中我需要的东西
 - 我需要实现一个提示词添加的功能，你帮我制定适合一个人全流程的 plan
+- 锐评提示词
 
 ```
 首先要确定意图
