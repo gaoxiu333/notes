@@ -5,6 +5,7 @@
 ## 参考
 
 - [Cursor 使用指南](https://docs.cursor.com/welcome)
+- [Cursor 生态推荐（rules、prompt、modes）](https://playbooks.com/rules)
 
 ## Context（上下文）
 
