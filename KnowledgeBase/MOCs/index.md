@@ -31,6 +31,7 @@ status: active
 
 - [[KnowledgeBase/MOCs/projects-moc|项目索引]] - 项目管理与开发实践
 - [[KnowledgeBase/MOCs/resources-moc|资源集合]] - 书籍、文章、工具等资源
+- [[KnowledgeBase/MOCs/tools-moc|工具索引]] - 各类实用工具的使用指南和配置方法
 
 ## 核心组件
 
@@ -53,10 +54,11 @@ status: active
 - 2024-07-15: 创建核心MOC文件
 - 2024-07-15: 建立标准化模板系统
 - 2024-07-15: 开始内容迁移工作
+- 2024-07-18: 添加工具MOC，完成Old目录内容迁移
 
 ## 待办事项
 
-- [ ] 完成全部MOC文件创建
+- [x] 完成全部MOC文件创建
 - [ ] 标签系统完善
 - [ ] 知识图谱构建
 - [ ] 定期回顾与维护机制建立 

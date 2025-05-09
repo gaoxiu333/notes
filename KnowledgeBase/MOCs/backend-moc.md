@@ -17,7 +17,7 @@ status: active
 
 ### Node.js
 
-- [[Technology/Backend/Node/node-version-management|Node.js版本管理与开发环境]] - 版本管理工具与环境配置指南
+- [[Technology/Backend/Node/environment-setup|Node.js版本管理与开发环境]] - 版本管理工具与环境配置指南
 - 异步编程模型 - *待添加*
 - 核心模块与API - *待添加*
 
@@ -37,6 +37,13 @@ status: active
   - MongoDB - *待添加*
   - Redis - *待添加*
 - ORM技术 - *待添加*
+
+## 数据工程
+
+- [[Technology/Backend/DataEngineering/data-sources|数据源获取工具]] - 爬虫和数据收集工具
+- 数据处理流程 - *待添加*
+- 数据转换 - *待添加*
+- 数据质量与验证 - *待添加*
 
 ## 框架与生态系统
 

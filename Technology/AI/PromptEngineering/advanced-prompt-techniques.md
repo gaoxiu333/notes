@@ -1,14 +1,14 @@
 ---
-title: "进阶提示词技巧速查表"
-date: 2024-07-15
-updated: 2024-07-15
-tags: 
+title: 进阶 Prompt 技巧 Cheatsheet
+date: 2024-07-18
+tags:
   - type/reference
-  - subject/ai/prompt
-status: active
+  - subject/ai
+  - topic/prompt-engineering
+status: migrated
 ---
 
-# 进阶提示词技巧速查表
+# 进阶 Prompt 技巧 Cheatsheet
 
 本文档整理了常见且易被忽视的高级提示词(Prompt)技巧，方便查阅和应用。
 

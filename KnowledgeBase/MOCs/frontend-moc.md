@@ -20,6 +20,8 @@ aliases: ["前端MOC", "前端索引"]
 - [[Technology/Frontend/CSS/css-fundamentals|CSS基础]] - 级联样式表的核心概念与应用
 - [[Technology/Frontend/HTML/semantic-html|语义化HTML]] - HTML5语义化标签和最佳实践
 - [[Technology/Frontend/concepts/responsive-design|响应式设计]] - 适应不同设备和屏幕尺寸的设计方法
+- [[Technology/Frontend/CSS/layout-techniques|布局技术]] - CSS布局方法和技巧
+- [[Technology/Frontend/CSS/browser-rendering|浏览器渲染原理]] - 浏览器渲染流程与优化
 
 ## 前端框架
 
@@ -27,8 +29,10 @@ aliases: ["前端MOC", "前端索引"]
 
 - [[Technology/Frontend/React/react-fundamentals|React基础]] - React核心概念和工作原理
 - [[Technology/Frontend/React/react-hooks|React Hooks]] - 函数式组件中状态和副作用管理
-- [[Technology/Frontend/React/react-best-practices|React最佳实践]] - React应用开发中的最佳实践和模式
+- [[Technology/Frontend/React/best-practices|React最佳实践]] - React应用开发中的最佳实践和模式
 - [[Technology/Frontend/React/state-management|状态管理]] - React应用中的状态管理方案对比
+- [[Technology/Frontend/React/typescript-guidelines|React TypeScript指南]] - React与TypeScript结合使用的规范和最佳实践
+- [[Technology/Frontend/React/learning-resources|React学习资源]] - React学习参考资料集合
 
 ### 其他框架
 
@@ -46,6 +50,7 @@ aliases: ["前端MOC", "前端索引"]
 - [[Technology/Frontend/Architecture/component-design|组件设计原则]] - 可复用组件的设计原则与模式
 - [[Technology/Frontend/Architecture/frontend-architecture|前端架构模式]] - 大型前端应用的架构方法和策略
 - [[Technology/Frontend/Architecture/micro-frontends|微前端]] - 微前端架构的实现与挑战
+- [[Technology/Frontend/Architecture/feature-sliced-design|特性切片设计(FSD)]] - 特性切片设计架构方法论
 
 ## 性能优化
 
@@ -57,6 +62,7 @@ aliases: ["前端MOC", "前端索引"]
 
 ### 学习资源
 
+- [[Technology/Frontend/web-references|Web开发参考资源]] - 前端Web开发相关参考资料
 - [[Resources/Tutorials/frontend-learning-path|前端学习路径]] - 系统化学习前端开发的指南
 - [[Resources/Books/frontend-books|前端推荐书籍]] - 前端开发必读书籍清单
 

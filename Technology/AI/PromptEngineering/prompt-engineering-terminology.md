@@ -1,11 +1,11 @@
 ---
-title: "提示词工程术语备忘录"
-date: 2024-07-15
-updated: 2024-07-15
-tags: 
+title: Prompt Engineering 术语备忘录
+date: 2024-07-18
+tags:
   - type/reference
-  - subject/ai/prompt
-status: active
+  - subject/ai
+  - topic/prompt-engineering
+status: migrated
 ---
 
 # 提示词工程术语备忘录

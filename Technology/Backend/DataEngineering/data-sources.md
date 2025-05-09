@@ -1,0 +1,17 @@
+---
+title: "数据源获取工具"
+date: 2024-07-18
+tags: 
+  - type/reference
+  - subject/data
+  - topic/scraping
+  - topic/data-collection
+status: active
+---
+
+# 数据源获取工具
+
+## 爬虫
+- [Crawl4AI](https://github.com/unclecode/crawl4ai) - 开源 LLM 友好型网络爬虫和抓取工具
+- [Firecrawl](https://github.com/mendableai/firecrawl) - 将整个网站转换为 LLM 就绪的 Markdown 或结构化数据。使用单一 API 即可抓取、爬取和提取数据。
+	- [firecrawl-mcp-server](https://github.com/mendableai/firecrawl-mcp-server/?ref=dailydoseofds.com) 官方的 MCP 服务 
