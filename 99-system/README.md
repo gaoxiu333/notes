@@ -25,7 +25,7 @@
   - 用于生成笔记的唯一ID编号
   - 在模板中通过以下代码调用：
     ```
-    <% this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.jd_id() %>
+    00.00.0001
     ```
 
 - **update_field**：自动更新元数据中的updated字段
@@ -35,7 +35,7 @@
     2. 在Templater设置中配置脚本目录指向`99-system/scripts`
     3. 在需要自动更新时间的模板最后添加以下代码（已注释状态）:
        ```
-       <%* /* this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.update_field() */ %>
+       
        ```
     4. 取消注释以启用自动更新功能
   - 使用说明详见脚本文件注释
@@ -76,5 +76,5 @@
 3. 勾选"Trigger Templater on file creation"
 4. 在模板末尾找到以下代码并取消注释（删除注释符号）：
    ```
-   <%* /* this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.update_field() */ %>
+   
    ``` 

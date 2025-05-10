@@ -17,8 +17,7 @@
 | **90‑archive**   | 已完结或弃置内容，按年份归档  |     |
 | **99‑system**    | 模板、脚本、样式、全局 MOC |     |
 
-**Johnny‑Decimal**：只在文件夹使用 `XX‑job‑domain`；文件名直接中文即可
-
+Johnny‑Decimal：只在文件夹使用 XX‑job‑domain；文件名统一采用 XX-中文名.md 格式，其中MOC文件用 00-MOC-主题.md 确保置顶；嵌套层级不超过2层（顶层文件夹→子文件夹→文件）
 ---
 
 ## II. 元数据层
@@ -30,14 +29,14 @@
 ```yaml
 ---
 title: 规范
-jd_id: J11-20250511-0050
-created: 2025-05-11 00:50 # AI 创建时，使用MCP获取时间
-updated: 2025-05-11 00:50 # AI 创建时，使用MCP获取时间
+jd_id: J10-20250510-1559
+created: 2025-05-10 15:59 # AI 创建时，使用MCP获取时间
+updated: 2025-05-10 15:59 # AI 创建时，使用MCP获取时间
 type: note            # moc / guide / note ...
 status: draft         # draft / active / archived
 tags: [] # 主题检索（见标签系统）
 ---
-
+```
 
 ## III. 标签系统
 
