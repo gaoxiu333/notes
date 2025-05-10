@@ -1,8 +1,4 @@
----
-created: {{date:YYYY-MM-DD HH:mm}}
-tags: [vim, 编辑器, 工具, 学习笔记]
-aliases: [Vim编辑器, 文本编辑器]
----
+
 
 # Vim 学习笔记
 
