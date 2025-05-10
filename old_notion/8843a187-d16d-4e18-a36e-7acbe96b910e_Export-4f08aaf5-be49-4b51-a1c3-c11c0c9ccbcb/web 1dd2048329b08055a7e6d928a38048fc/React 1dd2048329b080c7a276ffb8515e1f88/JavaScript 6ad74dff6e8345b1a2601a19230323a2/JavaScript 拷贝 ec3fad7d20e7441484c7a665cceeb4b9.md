@@ -1,0 +1,42 @@
+# JavaScript 拷贝
+
+# JavaScript 拷贝
+
+浅克隆
+- 拓展运算符`...`
+- `Object.assign({},obj)`
+
+- 深克隆
+    - structuredClone - 新的全局方法
+
+```jsx
+// 无法处理 类、实例、其他特殊情况const deepClone = (obj) => {
+  if (obj === null) return null;  let clone = Object.assign({}, obj);  Object.keys(clone).forEach((key) => {
+    clone[key] = typeof obj[key] === "object" ? deepClone(obj[key]) : obj[key];  });  if (Array.isArray(obj)) {
+    clone.length = obj.length;    return Array.from(clone);  }
+  return clone;};
+```
+
+Object.create(null) - 创建一个没有原型的对象，以保护全局对象。
+
+## 冷门拷贝
+
+虽然浅拷贝使用拓展运算符很方便，但是在看源码过程中，会看一些稀奇古改的浅拷贝方法，所以记录一下，以免后面再次造成困扰。
+
+## 数组
+
+**常用浅拷贝**
+
+- `[].slice()`
+- `[].concat()`
+- `[...[]]`
+- `Array.from([])`
+
+## 对象
+
+**常用浅拷贝**
+
+- `{...{..}}`
+- `Object.assign({},{..})`
+- `Object.fromEntries(Object.entries({..}))`
+- `JSON.parse(JSON.stringify({..}))`

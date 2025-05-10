@@ -1,0 +1,31 @@
+# JavaScript 作用域和闭包
+
+# JavaScript 作用域和闭包
+
+- 作用域和闭包
+- 变量提升
+- 执行上下文
+- ？this和作用域和执行上下文的关系
+
+## 作用域
+
+- **作用域**是当前的执行上下文，[值](https://developer.mozilla.org/zh-CN/docs/Glossary/Value)和表达式在其中“可见”或可被访问。如果一个[变量](https://developer.mozilla.org/zh-CN/docs/Glossary/Variable)或表达式不在当前的作用域中，那么它是不可用的。作用域也可以堆叠成层次结构，子作用域可以访问父作用域，反过来则不行。
+    
+    JavaScript 的作用域分以下三种：
+    
+    - 全局作用域：脚本模式运行所有代码的默认作用域
+    - 模块作用域：模块模式中运行代码的作用域
+    - 函数作用域：由[函数](https://developer.mozilla.org/zh-CN/docs/Glossary/Function)创建的作用域
+    此外，用 [`let`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/let) 或 [`const`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/const) 声明的变量属于额外的作用域：
+    - 块级作用域：用一对花括号（一个[代码块](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/block)）创建出来的作用域
+
+## 作用域链
+
+当在Javascript中使用一个变量的时候，首先Javascript引擎会尝试在当前作用域下去寻找该变量，如果没找到，再到它的上层作用域寻找，以此类推直到找到该变量或是已经到了全局作用域。
+
+## 词法作用域
+
+词法作用域就是指作用域是由代码中函数声明的位置来决定的，所以词法作用域是静态的作用域，通过它就能够预测代码在执行过程中如何查找标识符。
+
+> 词法作用域，主要针对的是定义函数时，作用域是静态的，变量查找是按照函数定义时的作用域链来查找变量。
+>

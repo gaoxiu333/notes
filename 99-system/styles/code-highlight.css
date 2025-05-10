@@ -1,0 +1,153 @@
+/* 代码片段高亮样式 */
+
+/* 代码块增强 */
+.markdown-rendered pre[class*="language-"] {
+  border-radius: 6px;
+  border: 1px solid var(--background-modifier-border);
+  margin: 1em 0;
+  padding: 0.5em;
+  position: relative;
+}
+
+/* 行号样式 */
+.markdown-rendered pre[class*="language-"].line-numbers {
+  padding-left: 3.8em;
+}
+
+/* 内联代码样式 */
+.markdown-rendered code:not([class*="language-"]) {
+  background-color: var(--background-modifier-border);
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-family: var(--font-monospace);
+}
+
+/* 代码块标题 */
+.markdown-rendered pre[class*="language-"]::before {
+  content: attr(data-language);
+  text-transform: uppercase;
+  display: block;
+  text-align: right;
+  font-size: 0.8em;
+  opacity: 0.7;
+  margin-bottom: 0.3em;
+}
+
+/* 代码块复制按钮 */
+.copy-code-button {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  background-color: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.8em;
+}
+
+.markdown-rendered pre:hover .copy-code-button {
+  opacity: 1;
+}
+
+/* 代码语言特定样式 */
+
+/* JavaScript/TypeScript */
+.language-javascript .token.string,
+.language-typescript .token.string {
+  color: #a8ff60;
+}
+
+.language-javascript .token.keyword,
+.language-typescript .token.keyword {
+  color: #ff9d00;
+}
+
+/* Python */
+.language-python .token.keyword {
+  color: #ff79c6;
+}
+
+.language-python .token.string {
+  color: #f1fa8c;
+}
+
+.language-python .token.builtin {
+  color: #8be9fd;
+}
+
+/* 代码片段标签 */
+.tag[href*="lang/"] {
+  background-color: #3a404a;
+  color: #c9d1d9;
+  font-family: var(--font-monospace);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.tag[href*="lang/javascript"] {
+  background-color: #f7df1e;
+  color: #000;
+}
+
+.tag[href*="lang/typescript"] {
+  background-color: #007acc;
+  color: #fff;
+}
+
+.tag[href*="lang/python"] {
+  background-color: #3776ab;
+  color: #fff;
+}
+
+.tag[href*="lang/go"] {
+  background-color: #00add8;
+  color: #fff;
+}
+
+/* 复杂度级别样式 */
+[data-complexity="1"]::after {
+  content: "简单";
+  background-color: #a5d6a7;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+[data-complexity="2"]::after {
+  content: "入门";
+  background-color: #80deea;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+[data-complexity="3"]::after {
+  content: "中级";
+  background-color: #fff59d;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+[data-complexity="4"]::after {
+  content: "高级";
+  background-color: #ffab91;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+
+[data-complexity="5"]::after {
+  content: "专家";
+  background-color: #ef9a9a;
+  font-size: 0.75em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 8px;
+} 
