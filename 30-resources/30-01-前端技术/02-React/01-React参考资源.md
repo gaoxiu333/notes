@@ -1,11 +1,11 @@
 ---
-title: react 参考
-jd_id: J00-20250511-1602
+title: React参考资源
+jd_id: J30-20250511-1606
 created: 2025-05-11 16:02
-updated: 2025-05-11 16:02
-type: note
-status: draft
-tags: []
+updated: 2025-05-11 16:06
+type: resource
+status: active
+tags: [topic/frontend, topic/frontend/react, topic/frontend/learning]
 ---
 
 # react 参考

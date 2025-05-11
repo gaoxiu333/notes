@@ -1,11 +1,11 @@
 ---
 title: 学习方法论-github-收集信息
-jd_id: J00-20250511-1554
+jd_id: J20-20250511-1608
 created: 2025-05-11 15:54
-updated: 2025-05-11 15:54
+updated: 2025-05-11 16:08
 type: note
-status: draft
-tags: []
+status: active
+tags: [topic/learning, topic/methodology, topic/github, topic/programming]
 ---
 
 ## **搜索关键词**

@@ -1,11 +1,11 @@
 ---
 title: 日常使用 LLM 推荐
-jd_id: J00-20250511-1603
+jd_id: J20-20250511-1606
 created: 2025-05-11 16:03
-updated: 2025-05-11 16:03
+updated: 2025-05-11 16:06
 type: note
-status: draft
-tags: []
+status: active
+tags: [topic/ai, topic/ai/llm, topic/ai/tools]
 ---
 
 # 日常使用 LLM 推荐

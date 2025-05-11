@@ -1,117 +1,57 @@
 ---
 title: Inbox迁移计划
-jd_id: J10-20250511-1257
-created: 2025-05-11 12:57
-updated: 2025-05-11 12:57
-type: project
-status: active
-tags: [topic/pkm, action/project, topic/organization]
+jd_id: J99-20250511-1612
+created: 2025-05-11 16:12
+updated: 2025-05-11 16:12
+type: plan
+status: completed
+tags: [status/completed, topic/pkm]
 ---
 
-# Inbox清空迁移计划
+# Inbox迁移计划
 
-## 1. 概述
+## 概述
 
-本计划旨在清理和重组`00-inbox`目录中的文件，将它们迁移到PKM系统中更合适的位置，以保持知识库的有序性和可访问性。
+本计划旨在将00-inbox目录中的文件按照PKM规范分类整理至相应目录。
 
-## 2. 文件迁移清单
+## 迁移规则
 
-### 2.1 知识类文件
+1. 所有文件必须具备完整YAML前置元数据
+2. 每个文件根据内容主题分配到对应目录
+3. 文件名按照规范统一格式
+4. 遵循PKM时间管理规则更新时间戳
 
-| 文件名 | 目标位置 | 元数据更新 | 标签更新 |
-|--------|----------|------------|----------|
-| cladude 学习笔记.md | 20-areas/20-02-AI研究/01-AI工具使用/ | jd_id: J20.02.0001<br>updated: 当前时间 | topic/ai/tools |
-| nestjs.md | 20-areas/20-04-Nodejs/核心概念/ | jd_id: J20.04.0001<br>updated: 当前时间 | topic/backend/nestjs, topic/nodejs |
-| web 性能优化.md | 20-areas/20-03-前端开发/ | jd_id: J20.03.0001<br>updated: 当前时间 | topic/frontend/performance |
-| js 手写算法要点.md | 30-resources/30-01-前端技术/02-React/核心原理/ | jd_id: J30.01.0001<br>updated: 当前时间 | topic/frontend/javascript, topic/algorithms |
-| 函数式编程.md | 30-resources/30-01-前端技术/ | jd_id: J30.01.0002<br>updated: 当前时间 | topic/frontend/javascript, topic/programming/functional |
-| MAC-使用备忘录.md | 30-resources/30-05-工具指南/开发工具/ | jd_id: J30.05.0001<br>updated: 当前时间 | topic/tools/mac |
-| 设计软件-figma.md | 30-resources/30-05-工具指南/开发工具/ | jd_id: J30.05.0002<br>updated: 当前时间 | topic/tools/design, topic/tools/figma |
-| 知识库的内容填充.md | 10-projects/10-00-PKM/ | jd_id: J10.00.0001<br>updated: 当前时间 | topic/pkm |
-| javascript-todo.md | 20-areas/20-03-前端开发/ | jd_id: J20.03.0002<br>updated: 当前时间 | topic/frontend/javascript, action/todo |
-| LINK.md | 99-system/MOCs/ | jd_id: J99.00.0001<br>updated: 当前时间<br>type: moc | topic/pkm/moc |
+## 目标文件分类
 
-### 2.2 code-snippets 目录
+### 1. AI相关内容
+- 日常使用 LLM 推荐.md → 20-areas/20-02-AI研究/01-AI工具使用/
+- CHAT GPT开发指南.md → 20-areas/20-02-AI研究/01-AI工具使用/
+- 资讯.md → 30-resources/30-02-AI资源/03-阅读资料/
 
-| 源位置 | 目标位置 | 处理方式 |
-|--------|----------|----------|
-| 00-inbox/code-snippets/ | 30-resources/code-snippets/ | 整体迁移，保持内部结构不变 |
+### 2. 前端开发相关
+- react 参考.md → 30-resources/30-01-前端技术/02-React/
+- 前端技术趋势参考.md → 30-resources/30-01-前端技术/03-常用堆栈/
+- 前端的架构合集和工具链.md → 30-resources/30-01-前端技术/03-常用堆栈/
 
-### 2.3 待办事项
+### 3. 博客相关
+- 我的博客备忘录.md → 10-projects/10-01-blog/
+- 关于我如何创建我的博客.md → 10-projects/10-01-blog/
 
-| 文件名 | 处理方式 |
-|--------|----------|
-| 00-待办事项.md | 内容整合到10-projects相应项目，并更新相关MOC文件 |
+### 4. PKM/学习方法相关
+- 什么是 PKM.md → 20-areas/20-00-方法论与思维/
+- 我的知识体系.md → 20-areas/20-00-方法论与思维/
+- 学习方法论CCSS.md → 20-areas/20-00-方法论与思维/学习方法/
+- 学习方法论-github-收集信息.md → 20-areas/20-00-方法论与思维/学习方法/
 
-## 3. 迁移步骤
+### 5. 工具使用相关
+- RSS 订阅方法.md → 30-resources/30-05-工具指南/
+- MAC-软件-Telegram.md → 30-resources/30-05-工具指南/
 
-### 3.1 准备工作
+## 迁移状态
 
-1. 备份整个`00-inbox`目录
-2. 确认目标目录存在，如不存在则创建
+✅ 已完成全部迁移，详见 [inbox-migration-report.md](inbox-migration-report.md)
 
-### 3.2 文件迁移
+## 执行时间
 
-对每个文件执行以下操作：
-
-1. 更新元数据：
-   - 保留原始`created`时间
-   - 更新`updated`时间为当前时间
-   - 更新`jd_id`按照目标位置的分类规则
-   - 设置合适的`type`和`status`
-   - 添加或更新`tags`
-
-2. 移动文件到目标位置
-
-3. 在相关MOC文件中添加链接：
-   - 查找目标目录中的MOC文件
-   - 如不存在，创建新的MOC文件
-   - 添加新迁移文件的链接
-
-### 3.3 code-snippets 处理
-
-1. 复制整个目录结构到`30-resources/code-snippets/`
-2. 更新`MOC-代码片段.md`的元数据和位置
-
-### 3.4 待办整合
-
-1. 分析`00-待办事项.md`中的内容
-2. 将待办事项分配到相应的项目文件中
-3. 更新项目的MOC文件
-
-## 4. MOC更新
-
-### 4.1 更新主题MOC
-
-确保每个迁移的文件在对应的主题MOC中有链接：
-
-- 在`20-areas/20-02-AI研究/01-AI工具使用/`中找到或创建MOC
-- 在`20-areas/20-04-Nodejs/核心概念/`中找到或创建MOC
-- 依此类推...
-
-### 4.2 更新全局MOC
-
-1. 更新`99-system/MOCs/MOC-dashboard.md`，确保所有主题MOC都被链接
-2. 使用`LINK.md`的内容扩充全局链接结构
-
-## 5. 验证与清理
-
-### 5.1 迁移验证
-
-1. 检查所有文件是否成功迁移
-2. 验证链接是否正常工作
-3. 确认元数据是否正确更新
-
-### 5.2 最终清理
-
-1. 确认所有内容已正确迁移后，清空`00-inbox`目录
-2. 保留`00-inbox/README.md`文件，说明inbox的用途和处理流程
-
-## 6. 后续行动
-
-1. 建立定期清理inbox的流程（建议每周一次）
-2. 设置提醒以防止inbox积累过多未处理内容
-3. 考虑使用自动化脚本辅助inbox内容迁移
-
-## 注意：
-迁移过程中注意内容查重，避免知识库重复臃肿
+- 计划制定: 2025-05-11 16:12
+- 计划完成: 2025-05-11 16:12

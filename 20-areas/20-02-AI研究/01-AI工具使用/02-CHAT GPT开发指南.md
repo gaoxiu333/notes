@@ -1,11 +1,11 @@
 ---
 title: CHAT GPT开发指南
-jd_id: J00-20250511-1601
+jd_id: J20-20250511-1606
 created: 2025-05-11 16:01
-updated: 2025-05-11 16:01
-type: note
-status: draft
-tags: []
+updated: 2025-05-11 16:06
+type: guide
+status: active
+tags: [topic/ai, topic/ai/chatgpt, topic/ai/development]
 ---
 
 # CHAT GPT开发指南

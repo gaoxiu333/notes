@@ -1,11 +1,11 @@
 ---
 title: 什么是 PKM
-jd_id: J00-20250511-1552
+jd_id: J20-20250511-1607
 created: 2025-05-11 15:52
-updated: 2025-05-11 15:52
+updated: 2025-05-11 16:07
 type: note
-status: draft
-tags: []
+status: active
+tags: [topic/pkm, topic/knowledge-management, topic/methodology]
 ---
 
 # 什么是 PKM
