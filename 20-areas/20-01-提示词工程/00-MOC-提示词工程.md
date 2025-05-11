@@ -1,5 +1,6 @@
 ---
-title: 提示词工程
+title: 00-MOC-提示词工程
+jd_id: J20-20250511-1130
 created: 2024-07-08 16:00
 updated: 2025-05-11 11:30
 type: moc

@@ -7,11 +7,26 @@
 按技术栈归类：
 
 - 30-01-前端技术
-- 30-02-人工智能
-- 30-03-编程语言
-- 30-04-工具指南
-- 30-05-技术文档
-- ...
+  - 01-CSS
+  - 02-React
+  - 03-常用堆栈
+- 30-02-AI资源
+  - 01-调研报告
+  - 02-参考资料
+  - 03-阅读资料
+- 30-03-技术指南
+- 30-04-数据集 - 各类数据集和数据源
+- 30-05-工具指南 - 工具使用指南
+
+## 入口 MOC
+
+快速访问各领域内容地图：
+
+- [[30-01-前端技术/00-MOC-前端技术|前端技术 MOC]]
+- [[30-02-AI资源/00-MOC-AI资源|AI资源 MOC]]
+- [[30-03-技术指南/00-MOC-技术指南|技术指南 MOC]]
+- [[30-04-数据集/00-MOC-数据集|数据集 MOC]]
+- [[30-05-工具指南/00-MOC-工具指南|工具指南 MOC]]
 
 ## 资源类型
 
@@ -23,10 +38,29 @@
 
 ## 资源笔记规范
 
-- 使用`_tpl-resource`模板
-- 标注资源的来源、作者、参考链接等
-- 为资源添加合适的标签，特别是`topic/`和`lang/`标签
-- 保持更新日期的及时性，过期资源应标记或更新
+- 文件命名必须遵循`XX-中文名.md`格式，确保有序显示
+- 每个子目录下的MOC（内容地图）文件必须命名为`00-MOC-主题.md`
+- 每个文件必须包含规范的YAML前置元数据，包括：
+  - title - 与文件名保持一致
+  - jd_id - 格式为`J30-YYYYMMDD-HHMM`
+  - created/updated - 创建和更新时间
+  - type - 资源类型（resource/moc/guide等）
+  - status - 资源状态（active/draft/archived）
+  - tags - 使用命名空间前缀（topic/、status/、action/、lang/）
+
+## 元数据规范示例
+
+```yaml
+---
+title: 01-文档名称
+jd_id: J30-20250511-1249  # Johnny-Decimal ID
+created: 2025-05-11 12:49 # 创建时间
+updated: 2025-05-11 12:49 # 更新时间
+type: resource             # resource / moc / guide ...
+status: active             # active / draft / archived
+tags: [topic/category, topic/subcategory]
+---
+```
 
 ## 资源使用原则
 

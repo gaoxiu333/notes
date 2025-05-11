@@ -1,11 +1,10 @@
 ---
-title: MOC-技术指南
+title: 00-MOC-技术指南
 jd_id: J30-20250511-0110
 created: 2025-05-11 01:10
-updated: 2025-05-11 01:10
+updated: 2025-05-11 13:28
 type: moc
 status: active
-schema: v1
 tags: [topic/dev-environment, topic/algorithms, topic/devops, topic/docker, topic/git, topic/linux, topic/database]
 ---
 
@@ -32,8 +31,8 @@ tags: [topic/dev-environment, topic/algorithms, topic/devops, topic/docker, topi
 - 暂无专门文档，参见[[01-技术主题简明指南#数据库]]
 
 ## 相关MOC
-- [[MOC-dashboard|全局仪表盘]]
-- [[../code-snippets/MOC-代码片段|代码片段MOC]]
+- [[99-system/MOCs/MOC-dashboard|全局仪表盘]]
+- [[30-resources/30-05-工具指南/开发工具/00-MOC-开发工具|开发工具]]
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: MOC-AI研究
+title: 00-MOC-AI研究
 jd_id: J20-20250511-1207
 created: 2025-05-11 12:07
 updated: 2025-05-11 12:20
