@@ -1,7 +1,7 @@
 ---
 title: 前端技术内容地图
 created: 2025-05-09 22:23
-updated: 2025-05-09 22:23
+updated: 2025-05-11 01:35
 type: moc
 status: active
 schema: v1
@@ -25,9 +25,11 @@ tags: [topic/frontend, topic/moc]
 - [[React 项目最佳实践]] - React项目开发的最佳实践指南
 - [[React 的学习参考资源]] - React学习资源汇总
 - [[React TypeScript 规范指南]] - React与TypeScript结合使用的规范
+- [[React/MOC-React核心原理|React核心原理]] - React内部实现原理与机制详解
 
 ## 相关代码片段
 - [[30-resources/code-snippets/frontend/vs-code|VS Code使用指南]] - 前端开发中常用的VS Code配置和插件
 
 ## 最近更新
+- 2025-05-11: 添加React核心原理系列文档
 - 2025-05-09: 从old目录迁移全部前端相关文档 

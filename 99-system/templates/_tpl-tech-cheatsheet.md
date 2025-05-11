@@ -5,8 +5,7 @@ created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 type: cheatsheet
 status: active
-schema: v1
-tags: [topic/技术, lang/]
+tags: [topic/tech, lang/]
 ---
 
 # <% tp.file.title %> 速查表
@@ -41,11 +40,6 @@ tags: [topic/技术, lang/]
 
 - [[相关技术笔记]]
 - [[官方文档链接]]
+- [ ] 将此速查表链接到相关技术MOC文件中
 
-<% /* 
-自动更新时间脚本
-此行代码确保每次保存文件时，元数据中的updated字段会更新为当前时间
-请确保已正确配置Templater插件，并在99-system/scripts/目录下有update_field.js文件
-如果要启用此功能，请取消下面行的注释：
-*/ %>
 <%* /* this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.update_field() */ %> 

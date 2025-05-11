@@ -1,0 +1,102 @@
+---
+title: 大语言模型与MCP
+jd_id: J20-20250511-1220
+created: 2025-05-11 12:20
+updated: 2025-05-11 12:20
+type: resource
+status: active
+tags: [topic/ai/llm, topic/ai/tools, topic/ai/mcp, lang/chinese]
+---
+
+# 大语言模型与MCP
+
+## 大语言模型推荐
+
+### Open AI(ChatGPT)
+不用介绍，家喻户晓。
+- [API 调用](https://platform.openai.com/login) 使用 API key 的方式使用 （有余额，测试用 $5 美元能用好久）
+- [ChatGPT Web](https://chatgpt.com/) 网页在线版（已开通 Plus）
+- [Sora](https://sora.com/explore) 生成图片/视频（Plus没过期之前可用）
+- 最佳模型
+  - GPT-4o
+  - GPT-o3
+
+### Claude
+和 ChatGPT 不相上下，在文案/代码等写作方面更胜一筹。
+
+- [官网地址](https://claude.ai/)
+- 最佳模型
+  - Claude 3.7 Sonnet
+  - Claude 3.5 Sonnet
+- **系统要求**
+  - Node.js 18+
+  - git 2.23+ (可选)
+  - 用于 PR 工作流程的 GitHub 或 GitLab CLI（可选）
+  - ripgrep (rg) 用于增强文件搜索（可选）
+  
+  ```bash
+  brew install ripgrep
+  ```
+
+- **安装**
+  ```bash
+  npm install -g @anthropic-ai/claude-code
+  ```
+
+### Perplexity
+AI 驱动的搜索引擎，弥补 ChatGPT 等 LLM 的知识局限性（如：知识截至日期）
+- [Perplexity Web](https://www.perplexity.ai/) - 通过 LLM 实时搜索答案（已开通PRO，一年）
+- 备注：可以使用 Claude 3.7 Sonnet、GPT-4o 等模型
+
+### Cursor
+Vibe Code，直接使用自然语言编程，当前的顶流，擅长 Python 和 JavaScript。
+- [官网地址](https://www.cursor.com/cn) 已开通会员（一年）
+- 备注：使用 Claude 3.7 Sonnet、Claude 3.5 Sonnet 编码最佳。
+
+### Openrouter
+LLM集成商，几乎涵盖所有主流 LLM 模型，包括 Open AI、Claude、DeepSeek等。
+- [官网地址](https://openrouter.ai/)（目前余额）
+- 备注：只能以 API key的方式调用，或者使用第三方客户端，**可以很轻松的切换各个模型做比较**
+
+### DeepSeek
+国内家喻户晓的推理 LLM，和几个顶流的大模型 GPT-4o 和 Claude 3.7 Sonnet 比起来还是有些差距，勉强一用。
+- [官网地址](https://www.deepseek.com/)
+- [API key](https://platform.deepseek.com/api_keys) （目前还有余额）
+
+### 第三方客户端
+只能使用付费的 API key 来使用，优点是更加灵活，上下文更长。
+- [**Cherry Studio**](https://github.com/CherryHQ/cherry-studio) - 趁着 DeepSeek 热度流行起来的客户端（比较全面，推荐）
+- [**ChatWise**](https://chatwise.ai) - 功能简单，突出简洁
+- [**ChatBox**](https://github.com/Bin-Huang/chatbox) - 感觉一般吧，可能有其他优势
+- [**ChatGPT Next Web**](https://github.com/ChatGPTNextWeb/NextChat) - 开源社区早期的网页版，有些内置的提示词，现在已经出了客户端
+
+### 总结
+学习期间，LLM 只推荐 Open AI 家族的 `GPT-4o`、以及 Claude 家族的 `Claude 3.7 Sonnet` 或者 `Claude 3.5 Sonnet` ，其他的 LLM 都体验过，大部分都一般，即使营销文章吹上天了，也有可能有些模型的提示词调一调效果也不错，但毕竟需要付出时间成本，在 AI 发展飞速迭代的情况下，还没有调明白，已经有新的 LLM 问世。
+
+## Model Context Protocol (MCP)
+
+MCP是一种标准协议，允许不同的客户端与大语言模型服务器进行通信。目前，MCP已经被Cursor、VSCode+Copilot等工具采用。
+
+### 常用MCP服务
+
+- [mcp.so](https://mcp.so/) - 寻找优秀的MCP服务器和客户端
+- [Sequential Thinking](https://github.com/modelcontextprotocol/servers/tree/HEAD/src/sequentialthinking) - 将复杂问题分解为可管理的步骤
+  - 示例：`使用「顺序思维」解决 xxx 问题`
+- [Auto MCP](https://auto-mcp.com) - 自动选择合适的MCP服务
+
+### Cursor MCP 体验
+
+#### BrowserTools MCP
+
+参考：[使用指南](https://browsertools.agentdesk.ai/installation)
+使用感受：没有特别出彩的地方，配置略繁琐：
+
+1. 需要安装浏览器插件
+2. 在 cursor 中配置 `@agentdeskai/browser-tools-mcp`
+3. 本地运行 `@agentdeskai/browser-tools-server`
+   > @agentdeskai/browser-tools-server 是真的很坑，无法配置在 cursor，只能本地运行，让我重启了一次电脑和无数次的 cursor
+
+## 链接与参考
+
+- [[00-MOC-AI工具|返回AI工具索引]]
+- [Model Context Protocol官网](https://modelcontextprotocol.io) 

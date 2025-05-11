@@ -1,9 +1,10 @@
 ---
 description: 
-globs: *.md
-alwaysApply: false
+globs: 
+alwaysApply: true
 ---
 # PKM 规范与时间管理
+
 
 ## 目录结构
 
@@ -102,3 +103,20 @@ Map of Content (MOC) 文件是知识体系的重要导航工具：
 - 确保每个笔记至少有一个到其他笔记的链接
 - 定期清理inbox文件夹，将内容分类到适当的位置
 - MOC文件应当是动态的，定期更新，而非静态列表
+
+## 写作指南
+1. 需要创建文件写作时，遵循 [write.md](mdc:prompt/write.md)
+2. 需要重写或者改写时，遵循 [rewrite.md](mdc:prompt/rewrite.md)
+
+## 时间
+不要自己生成时间，始终使用 `get_current_time` 获取时间
+
+## README
+不遵循以上规则，遵循github社区的最佳实践（个人知识库向）
+
+
+
+
+
+
+

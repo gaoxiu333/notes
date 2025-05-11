@@ -1,10 +1,10 @@
 ---
 title: <% tp.file.title %>
+jd_id: <% tp.user.jd_id() %>
 created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 type: note
 status: draft
-schema: v1
 tags: []
 ---
 
@@ -26,4 +26,7 @@ tags: []
 ## 待办事项
 
 - [ ] 相关任务 
+- [ ] 将此笔记链接到相关MOC文件中
+
+<%* /* this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.update_field() */ %> 
 

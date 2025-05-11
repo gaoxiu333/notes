@@ -5,7 +5,6 @@ created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 type: moc
 status: active
-schema: v1
 tags: [topic/moc]
 ---
 
@@ -37,7 +36,7 @@ tags: [topic/moc]
 
 ```dataview
 LIST
-FROM [[<% tp.file.title %>]] AND #type/resource
+FROM [[<% tp.file.title %>]] AND #topic/resource
 SORT file.ctime DESC
 ```
 
@@ -54,11 +53,6 @@ LIMIT 10
 
 - [[MOC-dashboard|仪表盘]]
 - [[相关领域MOC]]
+- [ ] 将此MOC链接到全局MOC仪表盘
 
-<% /* 
-自动更新时间脚本
-此行代码确保每次保存文件时，元数据中的updated字段会更新为当前时间
-请确保已正确配置Templater插件，并在99-system/scripts/目录下有update_field.js文件
-如果要启用此功能，请取消下面行的注释：
-*/ %>
 <%* /* this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.update_field() */ %> 

@@ -1,12 +1,11 @@
 ---
 title: <% tp.file.title %>
-jd_id: <% this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.jd_id() %>
+jd_id: <% tp.user.jd_id() %>
 created: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 updated: <% tp.date.now("YYYY-MM-DD HH:mm") %>
 type: resource
 status: active
-schema: v1
-tags: [主题/学习, 行动/学习资源]
+tags: [topic/learning, action/learning-resource]
 resource_type: course  # course / book / video / article / tutorial
 author: 
 source_url: 
@@ -106,6 +105,7 @@ related_path: [[]]  # 相关学习路径
 - [[相关资源1]]
 - [[相关资源2]]
 - [外部资源](URL)
+- [ ] 将此资源链接到相关MOC文件中
 
 ## 🔍 术语表
 
@@ -129,4 +129,4 @@ related_path: [[]]  # 相关学习路径
 
 - <% tp.date.now("YYYY-MM-DD") %> - 初始笔记创建
 
-<%* tp.meta.set("updated", tp.date.now("YYYY-MM-DD HH:mm")) %> 
+<%* /* this.app.plugins.plugins["templater-obsidian"].templater.current_functions_object.user.update_field() */ %> 

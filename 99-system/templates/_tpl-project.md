@@ -7,8 +7,7 @@ type: project
 status: planning
 owner: 
 due: <% tp.date.now("YYYY-MM-DD", 30) %>
-schema: v1
-tags: [action/project]
+tags: [topic/project, status/planning, action/project]
 ---
 
 # <% tp.file.title %> 项目
@@ -44,6 +43,7 @@ tags: [action/project]
 
 - [[相关技术笔记]]
 - [[参考资料]]
+- [ ] 将此项目链接到相关MOC文件中
 
 ## 项目日志
 
