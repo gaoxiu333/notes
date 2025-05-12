@@ -15,8 +15,6 @@ tags: [topic/pkm, topic/moc]
 ## PKM系统项目
 
 - [[知识库内容填充策略|知识库内容填充策略]] - 如何有效填充和组织个人知识库
-- [[inbox-migration-plan|Inbox迁移计划]] - 清理和组织收集箱内容的规划
-- [[inbox-migration-report|Inbox迁移执行报告]] - 迁移计划的执行情况和后续任务
 
 ## PKM方法论
 

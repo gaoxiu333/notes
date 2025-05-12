@@ -1,32 +1,57 @@
 ---
-title: 00-MOC-工具指南
-jd_id: J30-20250511-1249
-created: 2025-05-09 22:23
-updated: 2025-05-11 13:28
+title: MOC-工具指南
+jd_id: J30-20250511-1622
+created: 2025-05-11 16:22
+updated: 2025-05-11 16:22
 type: moc
 status: active
-tags: [topic/tools, status/active]
+tags: [topic/tools, topic/software, topic/productivity, topic/moc]
 ---
 
-# 工具指南 MOC
+# 工具指南地图
 
-这个MOC（Map of Content）整理了各类工具使用指南和软件资源，便于快速查找和使用。
+本文档索引了各类工具使用指南、教程和最佳实践。
+
+## 信息管理工具
+
+- [[01-RSS 订阅方法]] - RSS订阅与信息获取指南
+- [[开发工具/00-MOC-开发工具|开发工具]] - 开发相关工具集合
+
+## 通讯与社交工具
+
+- [[02-MAC-软件-Telegram]] - Telegram在Mac上的配置与使用
+
+## 生产力工具
+
+- 笔记应用
+  - Obsidian
+  - Notion
+  - OneNote
+- 任务管理
+  - Todoist
+  - Things
 
 ## 开发工具
-- [[开发工具/00-MOC-开发工具|开发工具 MOC]] - 开发相关工具汇总
-- [[开发工具/01-Vim使用指南|Vim使用指南]] - Vim编辑器的基本使用和进阶技巧
-- [[../30-01-前端技术/01-CSS/01-VS-Code使用指南|VS Code使用指南]] - VS Code快捷键与使用技巧
-- [[../30-02-AI资源/02-参考资料/01-Obsidian|Obsidian使用指南]] - Obsidian知识管理工具使用指南
 
-## 软件推荐
-- [[03-MAC-软件|MAC系统常用软件推荐]]
+- 编辑器与IDE
+- 版本控制
+- 协作工具
 
-## 网络工具
-- [[02-Quantumult-X|Quantumult X配置和使用指南]]
+## 系统工具
 
-## 相关MOC
-- [[99-system/MOCs/MOC-dashboard|知识库总览]]
-- [[20-areas/20-05-项目与资源/MOC-工具索引|工具索引]]
+- MAC系统工具
+- Windows工具
+- 跨平台工具
+
+## 创意工具
+
+- 设计软件
+- 音视频创作
+- 写作辅助
+
+## 相关资源
+
+- [[../../20-areas/20-05-项目与资源/MOC-工具索引|工具索引]]
 - [[../30-03-技术指南/00-MOC-技术指南|技术指南]]
 
 ## 最近更新

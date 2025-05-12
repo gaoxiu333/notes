@@ -1,39 +1,28 @@
 ---
-title: AI工具使用
-jd_id: J20.02.0000
-created: 2025-05-11 13:01
-updated: 2025-05-11 13:01
+title: MOC-AI工具
+jd_id: J20-20250511-1620
+created: 2025-05-11 16:20
+updated: 2025-05-11 16:20
 type: moc
 status: active
-tags: [topic/ai/tools, topic/moc]
+tags: [topic/ai, topic/ai/tools, topic/ai/llm]
 ---
 
-# AI工具使用导航
+# AI工具地图
 
-本MOC收集了各种AI工具的使用指南、技巧和笔记。
+本文档索引了各种AI工具的使用方法、教程和最佳实践。
 
-## 大语言模型
+## LLM模型与应用
 
-- [[claude-学习笔记|Claude 学习笔记]] - Claude桌面客户端使用与MCP开发
-- GPT相关工具（待添加）
-- Gemini相关工具（待添加）
+- [[01-日常使用 LLM 推荐]] - 日常AI助手与LLM工具推荐
+- [[02-CHAT GPT开发指南]] - ChatGPT开发与使用的详细指南
 
-## AI开发工具
+## AI开发资源
 
-- AI辅助编程工具（待添加）
-- AI内容创作工具（待添加）
+- [AI开发平台](https://platform.openai.com/) - OpenAI的开发平台
+- [HuggingFace](https://huggingface.co/) - AI模型分享社区
 
-## 多模态AI工具
+## 相关链接
 
-- 图像生成工具（待添加）
-- 音频处理工具（待添加）
-- 视频生成工具（待添加）
-
-## 资源链接
-
-- [Model Context Protocol官网](https://modelcontextprotocol.io/)
-- [Anthropic开发者文档](https://docs.anthropic.com/)
-
-## 相关MOC
-
-- [[20-areas/20-01-提示词工程/00-MOC-提示词工程|提示词工程]] 
+- [[../00-MOC-AI研究]] - AI研究总览
+- [[../../../30-resources/30-02-AI资源/03-阅读资料/01-AI资讯与阅读资源]] - AI相关阅读资源 
