@@ -91,4 +91,3 @@ LLM 集成商，几乎涵盖所有主流 LLM 模型，包括 Open AI、Claude、
 ## 链接与参考
 
 - [[00-MOC-AI工具|返回AI工具索引]]
-- [Model Context Protocol 官网](https://modelcontextprotocol.io)
