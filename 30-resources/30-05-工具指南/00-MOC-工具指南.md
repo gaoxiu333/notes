@@ -2,7 +2,7 @@
 title: MOC-工具指南
 jd_id: J30-20250511-1622
 created: 2025-05-11 16:22
-updated: 2025-05-11 16:22
+updated: 2025-05-13 07:45
 type: moc
 status: active
 tags: [topic/tools, topic/software, topic/productivity, topic/moc]
@@ -49,6 +49,13 @@ tags: [topic/tools, topic/software, topic/productivity, topic/moc]
 - 音视频创作
 - 写作辅助
 
+## AI与开发工具
+
+- [[Cursor-资源总览]]
+- [[Cursor-使用指南]]
+- [[Cursor-实战案例]]
+- [[前端AI工具全景概览]]
+
 ## 相关资源
 
 - [[../../20-areas/20-05-项目与资源/MOC-工具索引|工具索引]]
@@ -56,4 +63,5 @@ tags: [topic/tools, topic/software, topic/productivity, topic/moc]
 
 ## 最近更新
 - 2025-05-11: 规范文件夹命名
-- 2025-05-09: 从old/备忘录目录迁移全部工具类资源 
+- 2025-05-09: 从old/备忘录目录迁移全部工具类资源
+- 2025-05-13: 新增Cursor相关笔记索引 
