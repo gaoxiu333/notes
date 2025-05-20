@@ -41,12 +41,13 @@ tags: [topic/react, topic/frontend/best-practices, topic/monorepo]
 1. 使用 Turborepo 创建基础项目
 
 ```bash
-pnpm dlx create-turbo@latest --example basic .
+pnpm dlx create-turbo@latest
 ```
 
 2. 添加 Next.js 应用
 
 ```bash
+cd apps
 pnpm dlx create-next-app@latest --use-pnpm
 ```
 

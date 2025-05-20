@@ -16,11 +16,13 @@ tags: [topic/frontend, topic/frontend/react, topic/moc]
 
 - [[01-React参考资源]] - React学习资源汇总
 - [[核心原理/00-MOC-React核心原理|React核心原理]] - React底层实现原理解析
+- [官方文档](https://react.dev/)
+- [React 之道](https://alexkondov.com/tao-of-react/)
+- [React 手册](https://reacthandbook.dev/)
+- [React 哲学](https://github.com/mithi/react-philosophies)
+- [React 模式](https://reactpatterns.com/)
+- [React Typescript 速查表](https://react-typescript-cheatsheet.netlify.app/)
 
-## 官方资源
-
-- [React官方文档](https://react.dev) - React官方文档
-- [React GitHub](https://github.com/facebook/react) - React源码仓库
 
 ## 生态系统
 
@@ -32,3 +34,9 @@ tags: [topic/frontend, topic/frontend/react, topic/moc]
 
 - [[../03-常用堆栈/01-前端技术趋势参考|前端技术趋势参考]]
 - [[../00-MOC-前端技术|前端技术概览]] 
+
+## 最佳实践
+
+- [模式.dev](https://www.patterns.dev/)
+- [命名备忘单](https://github.com/kettanaito/naming-cheatsheet)
+- [Javascript 代码整洁之道](https://github.com/ryanmcdermott/clean-code-javascript)
