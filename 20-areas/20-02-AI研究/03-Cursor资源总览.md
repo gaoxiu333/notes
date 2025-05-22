@@ -1,5 +1,5 @@
 ---
-title: Cursor-资源总览
+title: Cursor资源总览
 jd_id: J30-20250513-0743
 created: 2025-05-12 10:32
 updated: 2025-05-13 07:59
@@ -8,7 +8,9 @@ status: draft
 tags: [topic/ai, topic/ide]
 ---
 
-# 1. 始终了解最新信息
+# Cursor资源总览
+
+## 1. 始终了解最新信息
 
 - 官方更新文档：[Changelog](https://docs.cursor.com/changelog)
 

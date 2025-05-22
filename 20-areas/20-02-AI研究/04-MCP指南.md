@@ -1,5 +1,5 @@
 ---
-title: MCP
+title: MCP指南
 jd_id: J00-20250522-1626
 created: 2025-05-22 16:26
 updated: 2025-05-22 16:26
@@ -8,7 +8,7 @@ status: draft
 tags: []
 ---
 
-# MCP
+# MCP指南
 
 ## MCP 概念
 
