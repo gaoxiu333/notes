@@ -8,19 +8,27 @@ status: draft
 tags: []
 ---
 
-# TypeScript 配置 (tsconfig.json) 备忘录
+# TypeScript 配置
 
-## 社区参考资源
-
-- [TypeScript 官方 tsconfig 参考](https://www.typescriptlang.org/tsconfig)
-- [ts-reset: 社区推荐配置](https://github.com/total-typescript/ts-reset)
-- [type-fest](https://github.com/sindresorhus/type-fest) - 有用的类型集合
-- [typescript-eslint](https://typescript-eslint.io/) - TypeScript 的 ESLint 配置
-
-## 有用的 tsconfig 模板项目
+## 初始化和基础配置模版
 
 - [tsconfig/bases](https://github.com/tsconfig/bases) - 各种项目类型的推荐基础配置
 - [Matt Pocock 的 tsconfig 速查表](https://www.totaltypescript.com/tsconfig-cheat-sheet) - 这是您提供的正确链接
+
+> `tsconfig/bases` 记录有官方推荐的模版，可以简单参考，tsconfig 速查表给出了最佳实践的配置，添加了个人理解，回避官方文档全面些。
+
+## 社区参考资源
+
+- [TypeScript 官方 tsconfig 参考](https://www.typescriptlang.org/tsconfig) - 官方配置文档
+- [tsconfig/bases](https://github.com/tsconfig/bases) - 官方推荐的各类项目基础配置
+- [@total-typescript/tsconfig](https://github.com/total-typescript/tsconfig) - Matt Pocock 的配置库
+- [ts-reset](https://github.com/total-typescript/ts-reset) - TypeScript 的“CSS 重置”，改进常见 JavaScript API 的类型
+- [type-fest](https://github.com/sindresorhus/type-fest) - 有用的类型集合
+- [Total TypeScript](https://www.totaltypescript.com/) - Matt Pocock 的全面 TypeScript 课程
+
+## TypeScript Lint
+
+- [typescript-eslint](https://typescript-eslint.io/) - TypeScript 的 ESLint 配置
 
 ## 最新的 TypeScript 功能
 
@@ -29,50 +37,7 @@ tags: []
 - [TypeScript 发行说明](https://devblogs.microsoft.com/typescript/)
 - [TypeScript 路线图](https://github.com/microsoft/TypeScript/wiki/Roadmap)
 
-## 基础配置
-
-```json
-{
-  "compilerOptions": {
-    /* 基础选项 */
-    "esModuleInterop": true, // 允许 CommonJS 和 ES 模块互操作，简化 import/export 混用
-    "skipLibCheck": true, // 跳过所有声明文件（.d.ts）的类型检查，加快编译速度
-    "target": "es2022", // 指定编译后 JS 的目标 ECMAScript 版本
-    "allowJs": true, // 允许编译 JS 文件（.js）
-    "resolveJsonModule": true, // 允许 import JSON 文件为模块
-    "moduleDetection": "force", // 强制所有文件都作为模块处理
-    "isolatedModules": true, // 每个文件单独作为模块编译，便于与 Babel 等工具集成
-    "verbatimModuleSyntax": true, // 精确保留 import/export 语法，强制类型导入用 import type
-
-    /* 严格模式 */
-    "strict": true, // 启用所有严格类型检查选项
-    "noUncheckedIndexedAccess": true, // 索引访问类型自动加上 | undefined，更安全
-    "noImplicitOverride": true, // 子类重写父类方法时必须显式使用 override 关键字
-
-    /* 如果使用 TypeScript 进行转译：*/
-    "module": "NodeNext", // 使用 Node.js 的最新模块系统
-    "outDir": "dist", // 编译输出目录
-    "sourceMap": true, // 生成 source map 文件，便于调试
-
-    /* 如果你在构建一个库：*/
-    "declaration": true, // 生成 .d.ts 类型声明文件
-
-    /* 如果你在 monorepo 中构建一个库：*/
-    "composite": true, // 支持增量编译，适合大型/多包项目
-    "declarationMap": true, // 生成声明文件的 source map，便于调试类型
-
-    /* 如果不使用 TypeScript 进行转译：*/
-    "module": "preserve", // 保留源码中的模块语法，不做转换
-    "noEmit": true, // 不输出编译结果，仅做类型检查
-
-    /* 如果你的代码运行在 DOM 环境：*/
-    "lib": ["es2022", "dom", "dom.iterable"], // 包含 ES2022 和 DOM 相关类型
-
-    /* 如果你的代码不运行在 DOM 环境：*/
-    "lib": ["es2022"] // 仅包含 ES2022 类型
-  }
-}
-```
+## 关键配置
 
 **noEmit** · _仅类型检查_
 
@@ -213,42 +178,6 @@ TypeScript 5.0 引入了多配置继承功能，可以组合不同的基础配�
 6. **添加`"baseUrl": "."`**
    - 简化模块导入路径，支持非相对路径导入
    - 与`paths`配合使用，创建路径别名
-
-## 常见问题与误区
-
-1. **误区：配置越严格越好**
-
-   - 过度严格的配置如`noUnusedLocals`会产生大量警告，干扰开发流程
-   - 应根据团队习惯和项目阶段选择适当的严格程度
-
-2. **误区：一种配置适用所有项目**
-
-   - 库项目需要生成声明文件，应用项目则不必
-   - 浏览器环境需要 DOM 类型，Node.js 项目则不需要
-   - 应根据项目特点定制配置
-
-3. **问题：模块解析错误**
-
-   - 设置`"baseUrl": "."`解决相对路径导入问题
-   - 针对不同环境选择正确的`moduleResolution`:
-     - Node.js: `"NodeNext"`
-     - 打包工具: `"Bundler"`
-
-4. **问题：类型定义文件缺失**
-
-   - 库项目需启用`"declaration": true"`
-   - 添加`"types": ["node"]`等选项指定全局类型
-   - 使用`@types/*`包添加第三方库的类型
-
-5. **误区：忽略`skipLibCheck"`选项**
-
-   - 大型项目中，检查所有.d.ts 文件会显著增加编译时间
-   - 启用该选项可大幅提高开发效率，很少有负面影响
-
-6. **问题：ES 模块与 CommonJS 混用**
-   - 设置`"esModuleInterop": true"`简化混用场景
-   - 了解`import * as X`和`import X`的区别
-   - 正确设置`module`和`moduleResolution`选项
 
 ## 推荐资源
 
