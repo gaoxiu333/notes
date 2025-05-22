@@ -34,15 +34,6 @@ tags: [topic/ai, topic/ide]
 
 - [CursorFocus](https://github.com/RenjiYuusei/CursorFocus)：编辑区聚焦插件
 
-## 2.4 MCP 资源
-
-- [mcp.so](https://mcp.so) - 寻找优秀的 MCP 服务器和客户端
-- [Sequential Thinking（顺序思维）官方文档](https://github.com/modelcontextprotocol/servers/tree/HEAD/src/sequentialthinking) - 将复杂问题分解为可管理的步骤
-  - 示例：使用「顺序思维」解决 xxx 问题
-- [Auto MCP 自动服务选择](https://auto-mcp.com/) - 自动选择合适的 MCP 服务
-- [smithery.ai](https://smithery.ai/) - 是开始使用 MCP 服务器的最快方式之一，这得益于它针对现有 MCP 客户端提供的每台服务器说明。
-- [Github 上的官方 MCP 仓库](https://github.com/modelcontextprotocol/servers)，您可以在其中找到参考、官方和社区构建的服务器。
-
 ---
 
 # 3. 核心功能
