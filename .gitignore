@@ -1,5 +1,6 @@
 # Obsidian特定文件和目录
 .obsidian/
+.browser/
 
 # 允许特定的Obsidian配置文件
 !.obsidian/app.json
