@@ -8,21 +8,15 @@ status: draft
 tags: [topic/ai, topic/ide]
 ---
 
-# Cursor资源总览
+# 参考链接
+
+## 概述
+
+基本上记录一些没有消化的文章或者是有价值的平台，供自己后续消化和学习，亦或者查漏补缺。
 
 ## 1. 始终了解最新信息
 
-- 官方更新文档：[Changelog](https://docs.cursor.com/changelog)
-
 ---
-
-# 2. 资源总览
-
-## 2.1 官方资源
-
-- [Cursor 官方网站](https://cursor.com/features)
-- [Changelog - 官方更新日志](https://docs.cursor.com/changelog)
-- [Cursor 社区论坛](https://forum.cursor.com)
 
 ## 2.2 社区精选
 

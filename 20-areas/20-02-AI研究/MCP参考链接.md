@@ -1,14 +1,20 @@
 ---
-title: MCP指南
-jd_id: J00-20250522-1626
-created: 2025-05-22 16:26
-updated: 2025-05-22 16:26
+title: 参考链接
+jd_id: J00-20250527-1145
+created: 2025-05-27 11:45
+updated: 2025-05-27 11:45
 type: note
 status: draft
 tags: []
 ---
 
-# MCP指南
+# 参考链接
+
+## 概述
+
+基本上记录一些没有消化的文章或者是有价值的平台，供自己后续消化和学习，亦或者查漏补缺。
+
+## 内容
 
 ## MCP 概念
 
@@ -29,9 +35,6 @@ tags: []
 - [MCP 官方仓库](https://github.com/modelcontextprotocol/servers)
 - [The MCP Registry](https://mastra.ai/mcp-registry-registry)
 - [mcp.so](https://mcp.so) - 寻找优秀的 MCP 服务器和客户端
-
-  - 示例：使用「顺序思维」解决 xxx 问题
-
 - [smithery.ai](https://smithery.ai/) - 是开始使用 MCP 服务器的最快方式之一，这得益于它针对现有 MCP 客户端提供的每台服务器说明。
 
 其他 MCP 集成（不太编程）
