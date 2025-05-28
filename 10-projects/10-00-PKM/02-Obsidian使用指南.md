@@ -1,21 +1,23 @@
 ---
 title: Obsidian使用指南
-created: 2025-05-09 22:23
-updated: 2025-05-09 22:23
-type: resource
+jd_id: J10-20250527-1123
+created: 2025-05-27 11:23
+updated: 2025-05-28 12:34
+type: guide
 status: active
-schema: v1
-tags: [topic/tools/obsidian, topic/pkm]
+tags: [topic/pkm, topic/obsidian, topic/tools]
 ---
 
-## 主题
+# Obsidian 使用指南
+
+## 配置随笔
 
 - `Cmd + ,`-> `外观` -> `主题` -> `选择主题` -> `GitHub Theme`
 - 修改外链样式：
   - 查看：`Cmd + Option + I`打开控制台-> 查看链接 css 类->`a.external-link`
   - 修改： `Cmd + ,`-> `外观` -> `CSS代码片段` -> `添加你要修改的样式`
 
-## 目录
+## 目录显示
 
 `第三方插件市场`-> 搜索: `Floating TOC`
 

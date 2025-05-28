@@ -1,3 +1,13 @@
+---
+title: PKM规范
+jd_id: J10-20250511-1031
+created: 2025-05-11 10:31
+updated: 2025-05-28 12:34
+type: guide
+status: active
+tags: [topic/pkm, topic/standards, topic/methodology]
+---
+
 # 📚 PKM 规范
 
 > 写笔记永远比维护规范更轻松。
