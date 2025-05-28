@@ -1,14 +1,14 @@
 ---
-title: tsconfig-备忘录
-jd_id: J00-20250515-1514
-created: 2025-05-15 15:14
-updated: 2025-05-15 15:14
-type: note
-status: draft
-tags: []
+title: 04-TypeScript配置备忘录
+jd_id: J10-20250519-1523
+created: 2025-05-19 15:23
+updated: 2025-05-28 16:17
+type: guide
+status: active
+tags: [topic/typescript, topic/config, topic/frontend, action/config]
 ---
 
-# TypeScript 配置
+# 🔧 06-TypeScript配置备忘录
 
 ## 初始化和基础配置模版
 
@@ -22,7 +22,7 @@ tags: []
 - [TypeScript 官方 tsconfig 参考](https://www.typescriptlang.org/tsconfig) - 官方配置文档
 - [tsconfig/bases](https://github.com/tsconfig/bases) - 官方推荐的各类项目基础配置
 - [@total-typescript/tsconfig](https://github.com/total-typescript/tsconfig) - Matt Pocock 的配置库
-- [ts-reset](https://github.com/total-typescript/ts-reset) - TypeScript 的“CSS 重置”，改进常见 JavaScript API 的类型
+- [ts-reset](https://github.com/total-typescript/ts-reset) - TypeScript 的"CSS 重置"，改进常见 JavaScript API 的类型
 - [type-fest](https://github.com/sindresorhus/type-fest) - 有用的类型集合
 - [Total TypeScript](https://www.totaltypescript.com/) - Matt Pocock 的全面 TypeScript 课程
 
