@@ -8,13 +8,11 @@ status: active
 tags: [topic/react, topic/frontend, topic/engineering, topic/boilerplate]
 ---
 
-# ⚛️ React技术栈项目指引
+# ⚛️ React 技术栈项目指引
 
 ## 📝 项目概述
 
 构建现代化 React boilerplate，采用 Monorepo 架构和 Turborepo 管理，集成最佳实践和完整开发工具链。
-
-**项目状态**: 文档完善阶段 (85% 完成) | **截止日期**: 2025-06-20
 
 ## 📂 核心文件索引
 
