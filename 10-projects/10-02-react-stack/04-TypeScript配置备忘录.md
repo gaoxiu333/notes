@@ -1,5 +1,5 @@
 ---
-title: 04-TypeScript配置备忘录
+title: TypeScript配置备忘录
 jd_id: J10-20250519-1523
 created: 2025-05-19 15:23
 updated: 2025-05-28 16:17
@@ -8,7 +8,7 @@ status: active
 tags: [topic/typescript, topic/config, topic/frontend, action/config]
 ---
 
-# 🔧 06-TypeScript配置备忘录
+# 🔧 TypeScript配置备忘录
 
 ## 初始化和基础配置模版
 

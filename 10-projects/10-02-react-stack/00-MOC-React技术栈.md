@@ -1,5 +1,5 @@
 ---
-title: React Stack MOC
+title: React技术栈项目指引
 jd_id: J10-20250520-1600
 created: 2025-05-20 16:00
 updated: 2025-05-28 14:07
@@ -8,7 +8,7 @@ status: active
 tags: [topic/react, topic/frontend, topic/engineering, topic/boilerplate]
 ---
 
-# ⚛️ React Stack Boilerplate 项目
+# ⚛️ React技术栈项目指引
 
 ## 📝 项目概述
 

@@ -1,3 +1,13 @@
+---
+title: React TypeScript备忘录
+jd_id: J10-20250528-1400
+created: 2025-05-28 14:00
+updated: 2025-05-28 14:00
+type: guide
+status: active
+tags: [topic/react, topic/typescript, topic/reference, action/reference]
+---
+
 # TypeScript React 快速参考手册
 
 > 这是基于[React TypeScript Cheat Sheet](https://react-typescript-cheatsheet.netlify.app/)的备忘录
