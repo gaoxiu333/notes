@@ -61,3 +61,9 @@
 - 说明文字用 muted-foreground
 - 危险操作用 destructive
 - 图表数据用 chart 系列
+
+## 资源
+
+** awesome**
+- [awesome-tailwindcss](https://github.com/aniftyco/awesome-tailwindcss)
+- [awesome-shadcn-ui](https://github.com/birobirobiro/awesome-shadcn-ui)
