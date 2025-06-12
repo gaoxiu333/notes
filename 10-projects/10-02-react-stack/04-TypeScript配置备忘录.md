@@ -184,3 +184,7 @@ TypeScript 5.0 引入了多配置继承功能，可以组合不同的基础配�
 - Matt Pocock 的全面 TypeScript 课程：[Total TypeScript](https://www.totaltypescript.com/)
 - 官方配置基础项目：[tsconfig/bases](https://github.com/tsconfig/bases)
 - Matt Pocock 的配置库：[@total-typescript/tsconfig](https://github.com/total-typescript/tsconfig)
+
+## nodejs 项目 ESModule 与 Commonjs 相互转换
+
+涉及 `package.json`、`tsconfig.json`、`eslint.config.ts` ?
