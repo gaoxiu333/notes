@@ -1,0 +1,143 @@
+---
+title: React错误边界
+jd_id: J00-20250615-2214
+created: 2025-06-15 22:14
+updated: 2025-06-15 22:14
+type: note
+status: draft
+tags: []
+---
+
+# React 错误处理简明指南
+
+> [!info]
+> 本文聚焦于 React 错误边界原理、现代最佳实践与测试方法，适合快速查阅与复用。
+
+## 1. 错误边界基础
+
+- 错误边界（Error Boundary）用于捕获组件树渲染/生命周期中的运行时错误，防止"白屏"。
+- 仅类组件可作为原生错误边界，需实现以下方法之一：
+  - `static getDerivedStateFromError(error)`：渲染阶段，返回新 state 以渲染备用 UI。
+  - `componentDidCatch(error, errorInfo)`：提交阶段，适合副作用（如日志上报）。
+
+```jsx
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+  componentDidCatch(error, errorInfo) {
+    // 可上报错误
+    console.error(error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) return <h1>出错了</h1>;
+    return this.props.children;
+  }
+}
+```
+
+> [!tip]
+> try/catch 无法捕获渲染/生命周期错误，需用错误边界。
+
+### 局限性
+- 不捕获事件处理器、异步代码、SSR、边界自身错误。
+- 事件/异步错误需用 try/catch 并手动 setState 通知边界。
+
+---
+
+## 2. 现代实践：react-error-boundary
+
+- 推荐使用 [react-error-boundary](https://github.com/bvaughn/react-error-boundary) 以支持函数组件和 Hooks。
+- 提供 `<ErrorBoundary>` 组件和 `useErrorBoundary` Hook。
+
+### 备用 UI 方案
+- `fallback`：静态元素
+- `FallbackComponent`：自定义组件（推荐）
+- `fallbackRender`：内联渲染函数
+
+```jsx
+function ErrorFallback({ error, resetErrorBoundary }) {
+  return (
+    <div role="alert">
+      <p>出错了: {error.message}</p>
+      <button onClick={resetErrorBoundary}>重试</button>
+    </div>
+  );
+}
+
+<ErrorBoundary FallbackComponent={ErrorFallback}>
+  <MyComponent />
+</ErrorBoundary>
+```
+
+### 错误恢复（重试）
+- `resetErrorBoundary`：清除错误状态，重新渲染
+- `onReset`：父组件重置业务状态
+
+### 异步错误处理
+- `useErrorBoundary` 提供 `showBoundary(error)`，可在 catch 块中调用
+
+```jsx
+const { showBoundary } = useErrorBoundary();
+useEffect(() => {
+  fetchData().catch(showBoundary);
+}, []);
+```
+
+---
+
+## 3. 架构与集成建议
+
+### 放置策略
+- 顶层（全局）：兜底，防止全局崩溃
+- 路由/页面层：隔离页面级错误
+- 组件/微件层：隔离局部故障
+
+> [!tip]
+> 推荐多层组合：全局 + 路由 + 关键组件
+
+### 与 React Router 集成
+- v6.4+ 支持 `errorElement` 和 `useRouteError`，可捕获 loader/action 错误
+
+```jsx
+function ErrorPage() {
+  const error = useRouteError();
+  return <div>出错了！{error.message}</div>;
+}
+```
+
+### 错误上报
+- 可在 `componentDidCatch` 或 `onError` 回调中集成 Sentry 等服务
+
+---
+
+## 4. 测试与最佳实践
+
+### 单元测试
+- 用"抛错组件"验证边界能否渲染备用 UI
+- 测试时可 mock console.error 保持输出整洁
+
+```jsx
+const ThrowError = () => { throw new Error('Test'); };
+render(<ErrorBoundary><ThrowError /></ErrorBoundary>);
+expect(screen.getByText(/出错了/)).toBeInTheDocument();
+```
+
+### 恢复/重试测试
+- 模拟点击"重试"按钮，断言 UI 恢复
+
+---
+
+## 相关链接
+- [[00-MOC-React技术栈|返回 React 技术栈 MOC]]
+- [react-error-boundary 官方文档](https://github.com/bvaughn/react-error-boundary)
+- [Sentry React 集成](https://docs.sentry.io/platforms/javascript/guides/react/)
+
+> [!summary]
+> 错误边界是 React 健壮性基石，推荐结合现代库、路由集成与监控服务，分层布局并完善测试。
+
+

@@ -8,25 +8,314 @@ status: draft
 tags: []
 ---
 
-# react-router简明指南
+# React Router v7+ 数据路由简明指南
 
-## 概述
+---
 
-简要描述本笔记的主要内容和目的。
+## 目录
 
-## 内容
+1. [核心概念](#核心概念)
+2. [权限控制典型应用](#权限控制典型应用)
+3. [常见进阶应用场景](#常见进阶应用场景)
+4. [乐观更新示例](#乐观更新示例)
+5. [动态路由示例](#动态路由示例)
+6. [RouterProvider 进阶配置](#routerprovider-进阶配置)
+7. [父子路由数据传递](#父子路由数据传递)
+8. [总结](#总结)
 
-正文内容...
+---
 
-## 链接与参考
+## 核心概念
 
-- [[相关笔记]]
-- [[相关概念]]
+React Router 6.4+ 引入数据路由机制，将数据加载、表单动作、错误处理等逻辑写入路由配置，提升开发体验。
 
-## 待办事项
+### 1. 路由配置示例
 
-- [ ] 相关任务 
-- [ ] 将此笔记链接到相关MOC文件中
+```jsx
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
- 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    loader: rootLoader,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "posts/:id",
+        element: <PostDetail />,
+        loader: postLoader,
+      },
+      {
+        path: "new",
+        action: newPostAction,
+      },
+    ],
+  },
+]);
 
+<RouterProvider router={router} />;
+```
+
+### 2. loader：异步数据加载
+
+- 在导航前执行，返回数据供组件渲染。
+
+```jsx
+export async function postLoader({ params }) {
+  const res = await fetch(`/api/posts/${params.id}`);
+  if (!res.ok) throw new Response("Not Found", { status: 404 });
+  return res.json();
+}
+```
+
+- 组件中读取：
+
+```jsx
+import { useLoaderData } from "react-router-dom";
+
+function PostDetail() {
+  const post = useLoaderData();
+  return <div>{post.title}</div>;
+}
+```
+
+### 3. action：表单提交与交互动作
+
+- 处理表单提交等用户操作。
+
+```jsx
+export async function newPostAction({ request }) {
+  const formData = await request.formData();
+  await fetch("/api/posts", {
+    method: "POST",
+    body: formData,
+  });
+  return redirect("/");
+}
+```
+
+- 结合 `<Form>` 使用：
+
+```jsx
+import { Form, useActionData } from "react-router-dom";
+
+function NewPost() {
+  const actionData = useActionData();
+  return (
+    <Form method="post">
+      <input name="title" />
+      <button type="submit">发布</button>
+      {actionData?.error && <p>{actionData.error}</p>}
+    </Form>
+  );
+}
+```
+
+### 4. errorElement：路由级错误边界
+
+- 捕获路由加载或动作中的错误。
+
+```jsx
+import { useRouteError } from "react-router-dom";
+
+function ErrorPage() {
+  const error = useRouteError();
+  return (
+    <div>
+      <h2>出错了！</h2>
+      <p>{error.statusText || error.message}</p>
+    </div>
+  );
+}
+```
+
+---
+
+## 权限控制典型应用
+
+通过 loader 或 action 统一管理权限，避免未授权访问或操作。
+
+### 1. loader 中权限校验
+
+```jsx
+import { redirect } from "react-router-dom";
+import { getUser } from "./auth";
+
+export async function protectedLoader() {
+  const user = await getUser();
+  if (!user) {
+    throw redirect("/login");
+  }
+  return user;
+}
+```
+
+### 2. 路由配置示例
+
+```jsx
+{
+  path: "dashboard",
+  loader: protectedLoader,
+  element: <DashboardPage />,
+  errorElement: <ErrorPage />,
+}
+```
+
+### 3. action 中权限保护
+
+```jsx
+export async function deletePostAction({ params }) {
+  const user = await getUser();
+  if (!user || !user.isAdmin) {
+    throw new Response("Forbidden", { status: 403 });
+  }
+
+  await deletePost(params.id);
+  return redirect("/posts");
+}
+```
+
+---
+
+## 常见进阶应用场景
+
+### 1. 页面数据预加载
+
+```jsx
+export async function profileLoader() {
+  const [user, posts] = await Promise.all([fetchUser(), fetchPosts()]);
+  return { user, posts };
+}
+```
+
+组件中：
+
+```jsx
+const { user, posts } = useLoaderData();
+```
+
+### 2. 表单提交状态管理
+
+```jsx
+import { useNavigation, Form, useActionData } from "react-router-dom";
+
+function LoginForm() {
+  const navigation = useNavigation();
+  const actionData = useActionData();
+
+  return (
+    <Form method="post">
+      <input name="username" />
+      <button disabled={navigation.state === "submitting"}>
+        {navigation.state === "submitting" ? "提交中..." : "提交"}
+      </button>
+      {actionData?.error && <p>{actionData.error}</p>}
+    </Form>
+  );
+}
+```
+
+### 3. 懒加载 + 分块路由
+
+```jsx
+import { lazy, Suspense } from 'react';
+
+const DashboardPage = lazy(() => import('./DashboardPage'));
+
+{
+  path: "dashboard",
+  element: (
+    <Suspense fallback={<Loading />}>
+      <DashboardPage />
+    </Suspense>
+  ),
+  loader: dashboardLoader,
+}
+```
+
+---
+
+## 乐观更新示例（useFetcher）
+
+```jsx
+import { useFetcher } from "react-router-dom";
+
+function AddItem() {
+  const fetcher = useFetcher();
+
+  return (
+    <fetcher.Form method="post" action="/items/new">
+      <input name="itemName" />
+      <button type="submit">添加</button>
+    </fetcher.Form>
+  );
+}
+```
+
+---
+
+## 动态路由示例
+
+```jsx
+const routesFromServer = [
+  { path: "home", element: <Home /> },
+  { path: "profile", element: <Profile /> },
+];
+
+const router = createBrowserRouter(routesFromServer);
+```
+
+---
+
+## RouterProvider 进阶配置
+
+支持全局 loading 和错误 fallback：
+
+```jsx
+<RouterProvider router={router} fallbackElement={<LoadingSpinner />} />
+```
+
+---
+
+## 父子路由数据传递简要说明
+
+父路由 loader 返回的数据会通过 `useLoaderData` 供父组件及其子组件访问，实现数据共享：
+
+```jsx
+// 父路由 loader
+export async function rootLoader() {
+  const user = await fetchUser();
+  return { user };
+}
+
+// 父组件
+function Root() {
+  const { user } = useLoaderData();
+  return (
+    <div>
+      <Header user={user} />
+      <Outlet />
+    </div>
+  );
+}
+
+// 子组件也可以使用 useLoaderData 访问相同数据
+function Header() {
+  const { user } = useLoaderData();
+  return <div>欢迎，{user.name}</div>;
+}
+```
+
+---
+
+## 总结
+
+- React Router v7+ 的数据路由集成了数据加载、动作处理、错误边界，推荐使用 loader 和 action 处理异步和权限逻辑
+- 权限控制通过 loader 预加载时校验用户，未登录或无权限可重定向或抛出错误
+- 进阶场景结合懒加载、动态路由、全局 loading、乐观更新等提升体验
+- 父路由 loader 返回的数据可被子路由共享，避免重复请求
+- 建议使用 `<Form>` 组件结合 action 实现表单提交的无刷新交互
+- `useFetcher` 可实现局部数据刷新和乐观更新，提升用户体验
+
+---
