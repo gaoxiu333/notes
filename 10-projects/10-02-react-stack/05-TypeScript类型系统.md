@@ -1,5 +1,5 @@
 ---
-title: ts类型系统
+title: TypeScript类型系统
 jd_id: J00-20250615-2025
 created: 2025-06-15 20:25
 updated: 2025-06-15 20:25

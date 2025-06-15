@@ -1,5 +1,5 @@
 ---
-title: TypeScript配置备忘录
+title: TypeScript配置指南
 jd_id: J10-20250519-1523
 created: 2025-05-19 15:23
 updated: 2025-06-15 19:46
