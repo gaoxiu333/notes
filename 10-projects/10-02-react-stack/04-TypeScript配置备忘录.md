@@ -188,3 +188,8 @@ TypeScript 5.0 引入了多配置继承功能，可以组合不同的基础配�
 ## nodejs 项目 ESModule 与 Commonjs 相互转换
 
 涉及 `package.json`、`tsconfig.json`、`eslint.config.ts` ?
+
+## 输出和解析策略
+-  `module` 控制者 tsc 的输出格式
+	- `nodenext` 
+> 当你不知道 `moduleResolution` 默认值的时候的时候 tsc --showConfig 查看一下
